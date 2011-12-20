@@ -31,16 +31,19 @@ import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field;
 import org.apache.lucene.index.CorruptIndexException;
+import org.apache.lucene.index.IndexReader;
 import org.apache.lucene.index.IndexWriter;
+import org.apache.lucene.index.IndexWriterConfig;
 import org.apache.lucene.queryParser.ParseException;
 import org.apache.lucene.queryParser.QueryParser;
 import org.apache.lucene.search.IndexSearcher;
 import org.apache.lucene.search.Query;
 import org.apache.lucene.search.ScoreDoc;
-import org.apache.lucene.search.TopDocCollector;
+import org.apache.lucene.search.TopScoreDocCollector;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.LockObtainFailedException;
 import org.apache.lucene.store.RAMDirectory;
+import org.apache.lucene.util.Version;
 
 public class TextSearchEngine {
 	
@@ -55,9 +58,9 @@ public class TextSearchEngine {
 
 	public TextSearchEngine() {
 		index = new RAMDirectory();
-		analyser = new StandardAnalyzer(); 
+		analyser = new StandardAnalyzer(Version.LUCENE_35); 
 		try {
-			writer = new IndexWriter(index, analyser, true);
+			writer = new IndexWriter(index, new IndexWriterConfig(Version.LUCENE_35, analyser));
 		} catch (CorruptIndexException e) {
 			// ignore
 			e.printStackTrace();
@@ -74,12 +77,12 @@ public class TextSearchEngine {
 
 	public void add(NodeWrapper node) {
 		Document doc = new Document();
-		doc.add(new Field(LABEL_FIELD_NAME, node.toString(), Field.Store.COMPRESS, Field.Index.TOKENIZED));
+		doc.add(new Field(LABEL_FIELD_NAME, node.toString(), Field.Store.YES, Field.Index.ANALYZED));
 		doc.add(new Field(HASH_FIELD_NAME, String.valueOf(node.hashCode()), Field.Store.YES, Field.Index.NO));
 		try {
 			writer.addDocument(doc);
 			hashToNodeWrapper.put(node.hashCode(), node);
-			writer.flush();
+			writer.commit();
 		} catch (CorruptIndexException e) {
 			// ignore
 			e.printStackTrace();
@@ -93,7 +96,7 @@ public class TextSearchEngine {
 		Set<NodeWrapper> results = new HashSet<NodeWrapper>();
 		Query query = null;
 		try {
-			QueryParser queryParser = new QueryParser(LABEL_FIELD_NAME, analyser);
+			QueryParser queryParser = new QueryParser(Version.LUCENE_35, LABEL_FIELD_NAME, analyser);
 			queryParser.setAllowLeadingWildcard(true);
 			query = queryParser.parse(queryString);
 		} catch (ParseException e) {
@@ -101,7 +104,7 @@ public class TextSearchEngine {
 		}
 		if (searcher == null) {
 			try {
-				searcher = new IndexSearcher(index);
+				searcher = new IndexSearcher(IndexReader.open(index));
 			} catch (CorruptIndexException e) {
 				throw new SearchFailedException("Internal error. Can't search.", e);
 			} catch (IOException e) {
@@ -109,7 +112,7 @@ public class TextSearchEngine {
 			}
 		}
 		// get up to 10 best hits
-		TopDocCollector collector = new TopDocCollector(10);
+		TopScoreDocCollector collector = TopScoreDocCollector.create(10, true);
 	    try {
 			searcher.search(query, collector);
 		} catch (IOException e) {

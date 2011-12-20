@@ -196,9 +196,9 @@ public class TimelineLayout implements LayoutManager {
 		TakenException(String message) {
 			super(message);
 		}
-		TakenException(String message, Throwable cause) {
-			super(message, cause);
-		}
+//		TakenException(String message, Throwable cause) {
+//			super(message, cause);
+//		}
 	}
 
 }

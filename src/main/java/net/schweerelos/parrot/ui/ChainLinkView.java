@@ -393,9 +393,9 @@ public class ChainLinkView extends JPanel {
 		private boolean shorten = false;
 		private int maxCharacters = 0;
 		
-		public ToStringListCellRenderer() {
-			// leave fields at default value
-		}
+//		public ToStringListCellRenderer() {
+//			// leave fields at default value
+//		}
 		
 		public ToStringListCellRenderer(int maxCharacters) {
 			if (maxCharacters >= 0) {
