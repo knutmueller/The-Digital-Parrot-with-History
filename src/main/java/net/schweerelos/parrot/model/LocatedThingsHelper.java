@@ -21,6 +21,8 @@
 
 package net.schweerelos.parrot.model;
 
+import java.util.Map.Entry;
+
 import net.schweerelos.parrot.util.QuadTree;
 import net.schweerelos.parrot.util.QuadTreeImpl;
 
@@ -33,6 +35,9 @@ import com.hp.hpl.jena.rdf.model.Property;
 import com.hp.hpl.jena.rdf.model.RDFNode;
 import com.hp.hpl.jena.rdf.model.Resource;
 import com.hp.hpl.jena.util.iterator.ExtendedIterator;
+import com.hp.hpl.jena.util.iterator.NiceIterator;
+
+import de.kmamut.parrot.history.changes.Version;
 
 public abstract class LocatedThingsHelper {
 	static private final String ABSOLUTELY_PLACED_THING = "http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#AbsolutelyPlacedThing";
@@ -49,14 +54,24 @@ public abstract class LocatedThingsHelper {
 		Resource placedThingClass = model.createClass(PLACED_THING);
 
 		QuadTree<CenteredThing<NodeWrapper>> result = new QuadTreeImpl<CenteredThing<NodeWrapper>>();
-		ExtendedIterator<Individual> instances = model
-				.listIndividuals(placedThingClass);
+
+		ExtendedIterator<Individual> instances = NiceIterator.emptyIterator();
+		if (pModel instanceof ParrotModelWithHistory)
+			for (Entry<Version, OntModel> mapEntry : ((ParrotModelWithHistory) pModel)
+					.getVersionedOntModels().entrySet()) {
+				model.createClass(PLACED_THING);
+				instances = instances.andThen(mapEntry.getValue()
+						.listIndividuals(placedThingClass));
+			}
+		else
+			instances = model.listIndividuals(placedThingClass);
+
 		while (instances.hasNext()) {
 			Individual instance = instances.next();
 			NodeWrapper wrapper = pModel.getNodeWrapper(instance);
 			try {
 				CenteredThing<NodeWrapper> thing = createCenteredThingFor(
-						instance, model, wrapper);
+						instance, wrapper);
 				result.put(thing.getLat(), thing.getLon(), thing);
 			} catch (NotPlacedThingException e) { /* ignore */
 			}
@@ -68,8 +83,7 @@ public abstract class LocatedThingsHelper {
 			NodeWrapper currentNode) throws NotPlacedThingException {
 		try {
 			return createCenteredThingFor(currentNode.getOntResource()
-					.asIndividual(),
-					currentNode.getOntResource().getOntModel(), currentNode);
+					.asIndividual(), currentNode);
 		} catch (NullPointerException npe) {
 			throw new NotPlacedThingException(currentNode
 					+ " isn't a placed thing", npe);
@@ -77,14 +91,14 @@ public abstract class LocatedThingsHelper {
 	}
 
 	private static CenteredThing<NodeWrapper> createCenteredThingFor(
-			Individual instance, OntModel model, NodeWrapper wrapper)
+			Individual instance, NodeWrapper wrapper)
 			throws NotPlacedThingException {
-		float latitude = extractLatitude(instance, model);
-		float longitude = extractLongitude(instance, model);
+		float latitude = extractLatitude(instance);
+		float longitude = extractLongitude(instance);
 
 		CoordinatePrecision precision;
 		try {
-			precision = extractPrecision(instance, model);
+			precision = extractPrecision(instance);
 		} catch (NotPlacedThingException e) {
 			// use default precision
 			// TODO is this a good idea?
@@ -142,10 +156,10 @@ public abstract class LocatedThingsHelper {
 		return res.asIndividual().hasOntClass(ABSOLUTELY_PLACED_THING);
 	}
 
-	private static float extractLatitude(OntResource node, OntModel model)
+	private static float extractLatitude(OntResource node)
 			throws NotPlacedThingException {
 		// TODO #42 do it this way for timed things too
-		Property latitudeProperty = model.createProperty(LATITUDE);
+		Property latitudeProperty = node.getOntModel().createProperty(LATITUDE);
 		RDFNode latitudeNode;
 		// System.out.println("extracting latitude for " + node.getLocalName());
 		if (node.hasProperty(latitudeProperty)) {
@@ -153,7 +167,7 @@ public abstract class LocatedThingsHelper {
 			latitudeNode = node.getPropertyValue(latitudeProperty);
 		} else {
 			// System.out.println("trying to find indirect latitude value");
-			latitudeNode = findNearest(node, model, latitudeProperty);
+			latitudeNode = findNearest(node, latitudeProperty);
 			// System.out.println("success finding indirect latitude value");
 		}
 		return extractFloat(latitudeNode);
@@ -169,10 +183,10 @@ public abstract class LocatedThingsHelper {
 	 * @return
 	 * @throws NotPlacedThingException
 	 */
-	private static RDFNode findNearest(OntResource node, OntModel model,
-			Property property) throws NotPlacedThingException {
-		Property locatedInProperty = model.createProperty(LOCATED_IN);
-		Property coordPrecisionProperty = model.createProperty(COORD_PRECISION);
+	private static RDFNode findNearest(OntResource node, Property property)
+			throws NotPlacedThingException {
+		Property locatedInProperty = node.getOntModel().createProperty(LOCATED_IN);
+		Property coordPrecisionProperty = node.getOntModel().createProperty(COORD_PRECISION);
 
 		if (!node.hasProperty(locatedInProperty)) {
 			throw new NotPlacedThingException("couldn't find a value for "
@@ -215,27 +229,26 @@ public abstract class LocatedThingsHelper {
 		return currentBest;
 	}
 
-	private static float extractLongitude(OntResource node, OntModel model)
+	private static float extractLongitude(OntResource node)
 			throws NotPlacedThingException {
-		Property longitudeProperty = model.createProperty(LONGITUDE);
+		Property longitudeProperty = node.getOntModel().createProperty(LONGITUDE);
 		RDFNode longitudeValue;
 		if (node.hasProperty(longitudeProperty)) {
 			longitudeValue = node.getPropertyValue(longitudeProperty);
 		} else {
-			longitudeValue = findNearest(node, model, longitudeProperty);
+			longitudeValue = findNearest(node, longitudeProperty);
 		}
 		return extractFloat(longitudeValue);
 	}
 
-	private static CoordinatePrecision extractPrecision(OntResource node,
-			OntModel model) throws NotPlacedThingException {
-		Property coordPrecisionProperty = model.createProperty(COORD_PRECISION);
+	private static CoordinatePrecision extractPrecision(OntResource node)
+			throws NotPlacedThingException {
+		Property coordPrecisionProperty = node.getOntModel().createProperty(COORD_PRECISION);
 		RDFNode coordPrecisionValue;
 		if (node.hasProperty(coordPrecisionProperty)) {
 			coordPrecisionValue = node.getPropertyValue(coordPrecisionProperty);
 		} else {
-			coordPrecisionValue = findNearest(node, model,
-					coordPrecisionProperty);
+			coordPrecisionValue = findNearest(node, coordPrecisionProperty);
 		}
 
 		Individual coordPrecision = coordPrecisionValue.as(Individual.class);

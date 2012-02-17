@@ -22,7 +22,6 @@
 package net.schweerelos.parrot.ui;
 
 import java.awt.BasicStroke;
-import java.awt.Color;
 import java.awt.Component;
 import java.awt.Cursor;
 import java.awt.Dimension;
@@ -39,6 +38,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.EnumSet;
 import java.util.List;
 
 import javax.swing.BorderFactory;
@@ -91,37 +91,6 @@ public class GraphViewComponent extends JPanel implements MainViewComponent,
 	private static final String LAYOUT_SUFFIX = ".layout";
 
 	private static final int PADDING_NODE_BORDER = 12;
-
-	private static final Color COLOR_BACKGROUND = Color.WHITE;
-
-	private static final Color COLOR_NODE_BG = UIConstants.TT_ENVIRONMENT_LIGHT;
-	private static final Color COLOR_NODE_PICKED_BG = UIConstants.ACCENT_LIGHT;
-	private static final Color COLOR_NODE_HIGHLIGHTED_BG = UIConstants.ENVIRONMENT_LIGHTEST;
-	private static final Color COLOR_NODE_WITH_PICKED_NEIGHBOUR_BG = UIConstants.ACCENT_LIGHTEST;
-	private static final Color COLOR_NODE_ADJACENT_EDGE_PICKED_BG = COLOR_NODE_WITH_PICKED_NEIGHBOUR_BG;
-	private static final Color COLOR_NODE_WITH_HIGHLIGHTED_NEIGHBOUR_BG = UIConstants.T_ENVIRONMENT_LIGHTEST;
-
-	private static final Color COLOR_NODE_BORDER = UIConstants.TT_ENVIRONMENT_MEDIUM;
-	private static final Color COLOR_NODE_PICKED_BORDER = UIConstants.ACCENT_MEDIUM;
-	private static final Color COLOR_NODE_HIGHLIGHTED_BORDER = UIConstants.ENVIRONMENT_SHADOW_DARK;
-	private static final Color COLOR_NODE_WITH_HIGHLIGHTED_NEIGHBOUR_BORDER = COLOR_NODE_HIGHLIGHTED_BORDER;
-	private static final Color COLOR_NODE_WITH_PICKED_NEIGHBOUR_BORDER = UIConstants.T_ACCENT_MEDIUM;
-	private static final Color COLOR_NODE_ADJACENT_EDGE_PICKED_BORDER = COLOR_NODE_PICKED_BORDER;
-
-	private static final Color COLOR_NODE_TEXT = UIConstants.TT_TEXT;
-	private static final Color COLOR_NODE_PICKED_TEXT = UIConstants.TEXT;
-	private static final Color COLOR_NODE_HIGHLIGHTED_TEXT = UIConstants.TEXT;
-	private static final Color COLOR_NODE_WITH_HIGHLIGHTED_NEIGHBOUR_TEXT = UIConstants.T_TEXT;
-	private static final Color COLOR_NODE_WITH_PICKED_NEIGHBOUR_TEXT = COLOR_NODE_WITH_HIGHLIGHTED_NEIGHBOUR_TEXT;
-	private static final Color COLOR_NODE_ADJACENT_EDGE_PICKED_TEXT = COLOR_NODE_WITH_HIGHLIGHTED_NEIGHBOUR_TEXT;
-
-	private static final Color COLOR_EDGE = COLOR_NODE_BORDER;
-	private static final Color COLOR_EDGE_PICKED = COLOR_NODE_PICKED_BORDER;
-	private static final Color COLOR_EDGE_HIGHLIGHTED = COLOR_NODE_HIGHLIGHTED_BORDER;
-	private static final Color COLOR_EDGE_ADJACENT_VERTEX_PICKED = COLOR_EDGE_PICKED;
-	private static final Color COLOR_EDGE_ADJACENT_VERTEX_HIGHLIGHTED = COLOR_EDGE_HIGHLIGHTED;
-
-	private static final Color COLOR_EDGE_LABEL = UIConstants.TEXT;
 
 	private static final BasicStroke STROKE_EDGE_DEFAULT = new BasicStroke(2);
 	private static final BasicStroke STROKE_EDGE_PICKED = new BasicStroke(3);
@@ -224,13 +193,13 @@ public class GraphViewComponent extends JPanel implements MainViewComponent,
 					}
 				});
 		renderContext.setEdgeLabelRenderer(new DefaultEdgeLabelRenderer(
-				COLOR_EDGE_LABEL) {
+				Colors.getEdgeColor(EnumSet.of(Colors.LABEL))) {
 			@Override
 			public <E> Component getEdgeLabelRendererComponent(JComponent vv,
 					Object value, Font font, boolean isSelected, E edge) {
 				Component component = super.getEdgeLabelRendererComponent(vv,
 						value, font, isSelected, edge);
-				component.setForeground(COLOR_EDGE_LABEL);
+				component.setForeground(Colors.getEdgeColor(EnumSet.of(Colors.LABEL)));
 				return component;
 			}
 
@@ -243,7 +212,7 @@ public class GraphViewComponent extends JPanel implements MainViewComponent,
 				renderContext);
 		renderContext.setVertexShapeTransformer(vlasr);
 
-		vis.setForeground(COLOR_NODE_TEXT);
+		vis.setForeground(Colors.getNodeColor(EnumSet.of(Colors.TEXT)));
 
 		// customize the render context
 
@@ -251,7 +220,7 @@ public class GraphViewComponent extends JPanel implements MainViewComponent,
 				.setVertexLabelTransformer(new ToStringLabeller<NodeWrapper>());
 
 		renderContext.setVertexLabelRenderer(new DefaultVertexLabelRenderer(
-				COLOR_NODE_PICKED_TEXT) {
+				Colors.getNodeColor(EnumSet.of(Colors.TEXT, Colors.PICKED))) {
 			@Override
 			public <V> Component getVertexLabelRendererComponent(JComponent vv,
 					Object value, Font font, boolean isSelected,
@@ -270,19 +239,18 @@ public class GraphViewComponent extends JPanel implements MainViewComponent,
 				if (vertexToRender instanceof NodeWrapper) {
 					NodeWrapper vertex = (NodeWrapper) vertexToRender;
 					if (vertexPickInfo.isPicked(vertex)) {
-						component.setForeground(COLOR_NODE_PICKED_TEXT);
+						component.setForeground(Colors.getNodeColor(EnumSet.of(Colors.TEXT, Colors.PICKED)));
 					} else if (vertex.isHighlighted()) {
-						component.setForeground(COLOR_NODE_HIGHLIGHTED_TEXT);
+						component.setForeground(Colors.getNodeColor(EnumSet.of(Colors.TEXT, Colors.HIGHLIGHTED)));
 						component.setFont(font.deriveFont(Font.BOLD));
 					} else if (GraphViewHelper.hasPickedNeighbour(vertex, vertexPickInfo, graph)) {
-						component
-								.setForeground(COLOR_NODE_WITH_PICKED_NEIGHBOUR_TEXT);
+						component.setForeground(Colors.getNodeColor(EnumSet.of(Colors.TEXT, Colors.PICKED, Colors.NEIGHBOUR)));
 					} else if (GraphViewHelper.hasPickedAdjacentEdge(vertex, edgePickInfo, graph)) {
-						component.setForeground(COLOR_NODE_ADJACENT_EDGE_PICKED_TEXT);
+						component.setForeground(Colors.getNodeColor(EnumSet.of(Colors.TEXT, Colors.PICKED, Colors.ADJACENT)));
 					} else if (GraphViewHelper.hasHighlightedNeighbour(vertex, graph)) {
-						component.setForeground(COLOR_NODE_WITH_HIGHLIGHTED_NEIGHBOUR_TEXT);
+						component.setForeground(Colors.getNodeColor(EnumSet.of(Colors.TEXT, Colors.HIGHLIGHTED, Colors.NEIGHBOUR)));
 					} else {
-						component.setForeground(COLOR_NODE_TEXT);
+						component.setForeground(Colors.getNodeColor(EnumSet.of(Colors.TEXT)));
 					}
 				}
 				
@@ -307,20 +275,20 @@ public class GraphViewComponent extends JPanel implements MainViewComponent,
 			@Override
 			public Paint transform(NodeWrapper vertex) {
 				if (vertexPickInfo.isPicked(vertex)) {
-					return COLOR_NODE_PICKED_BORDER;
+					return Colors.getNodeColor(vertex, EnumSet.of(Colors.PICKED, Colors.BORDER));
 				} else if (vertex.isHighlighted()) {
-					return COLOR_NODE_HIGHLIGHTED_BORDER;
+					return Colors.getNodeColor(vertex, EnumSet.of(Colors.HIGHLIGHTED, Colors.BORDER));
 				} else {
 					if (GraphViewHelper.hasPickedAdjacentEdge(vertex, edgePickInfo, graph)) {
-						return COLOR_NODE_ADJACENT_EDGE_PICKED_BORDER;
+						return Colors.getNodeColor(vertex, EnumSet.of(Colors.ADJACENT, Colors.PICKED, Colors.BORDER));
 					}
 					if (GraphViewHelper.hasPickedNeighbour(vertex, vertexPickInfo, graph)) {
-						return COLOR_NODE_WITH_PICKED_NEIGHBOUR_BORDER;
+						return Colors.getNodeColor(vertex, EnumSet.of(Colors.PICKED, Colors.NEIGHBOUR, Colors.BORDER));
 					} else if (GraphViewHelper.hasHighlightedNeighbour(vertex, graph)) {
-						return COLOR_NODE_WITH_HIGHLIGHTED_NEIGHBOUR_BORDER;
+						return Colors.getNodeColor(vertex, EnumSet.of(Colors.HIGHLIGHTED, Colors.NEIGHBOUR, Colors.BORDER));
 					}
 					// will get here only if no neighbour is picked/highlighted
-					return COLOR_NODE_BORDER;
+					return Colors.getNodeColor(vertex, EnumSet.of(Colors.BORDER));
 				}
 			}
 		};
@@ -330,19 +298,19 @@ public class GraphViewComponent extends JPanel implements MainViewComponent,
 			@Override
 			public Paint transform(NodeWrapper vertex) {
 				if (vertexPickInfo.isPicked(vertex)) {
-					return COLOR_NODE_PICKED_BG;
+					return Colors.getNodeColor(EnumSet.of(Colors.PICKED, Colors.BACKGROUND));
 				} else if (vertex.isHighlighted()) {
-					return COLOR_NODE_HIGHLIGHTED_BG;
+					return Colors.getNodeColor(EnumSet.of(Colors.HIGHLIGHTED, Colors.BACKGROUND));
 				} else {
 					if (GraphViewHelper.hasPickedAdjacentEdge(vertex, edgePickInfo, graph)) {
-						return COLOR_NODE_ADJACENT_EDGE_PICKED_BG;
+						return Colors.getNodeColor(EnumSet.of(Colors.ADJACENT, Colors.PICKED, Colors.BACKGROUND));
 					}
 					if (GraphViewHelper.hasPickedNeighbour(vertex, vertexPickInfo, graph)) {
-						return COLOR_NODE_WITH_PICKED_NEIGHBOUR_BG;
+						return Colors.getNodeColor(EnumSet.of(Colors.PICKED, Colors.NEIGHBOUR, Colors.BACKGROUND));
 					} else if (GraphViewHelper.hasHighlightedNeighbour(vertex, graph)) {
-						return COLOR_NODE_WITH_HIGHLIGHTED_NEIGHBOUR_BG;
+						return Colors.getNodeColor(EnumSet.of(Colors.HIGHLIGHTED, Colors.NEIGHBOUR, Colors.BACKGROUND));
 					}
-					return COLOR_NODE_BG;
+					return Colors.getNodeColor(EnumSet.of(Colors.BACKGROUND));
 				}
 			}
 		};
@@ -395,15 +363,15 @@ public class GraphViewComponent extends JPanel implements MainViewComponent,
 			@Override
 			public Paint transform(NodeWrapper edge) {
 				if (edgePickInfo.isPicked(edge)) {
-					return COLOR_EDGE_PICKED;
+					return Colors.getEdgeColor(edge, EnumSet.of(Colors.PICKED, Colors.LINE));
 				} else if (GraphViewHelper.hasPickedAdjacentVertex(edge, vertexPickInfo, graph)) {
-					return COLOR_EDGE_ADJACENT_VERTEX_PICKED;
+					return Colors.getEdgeColor(edge, EnumSet.of(Colors.ADJACENT, Colors.PICKED, Colors.LINE));
 				} else if (edge.isHighlighted()) {
-					return COLOR_EDGE_HIGHLIGHTED;
+					return Colors.getEdgeColor(edge, EnumSet.of(Colors.HIGHLIGHTED, Colors.LINE));
 				} else if (GraphViewHelper.hasHighlightedAdjacentVertex(edge, graph)) {
-					return COLOR_EDGE_ADJACENT_VERTEX_HIGHLIGHTED;
+					return Colors.getEdgeColor(edge, EnumSet.of(Colors.ADJACENT, Colors.HIGHLIGHTED, Colors.LINE));
 				} else {
-					return COLOR_EDGE;
+					return Colors.getEdgeColor(EnumSet.of(Colors.LINE));
 				}
 			}
 		};
@@ -416,7 +384,7 @@ public class GraphViewComponent extends JPanel implements MainViewComponent,
 		renderContext.setEdgeIncludePredicate(includePredicate);
 		renderContext.setVertexIncludePredicate(includePredicate);
 
-		vis.setBackground(COLOR_BACKGROUND);
+		vis.setBackground(Colors.getBackgroundColor());
 		
 		mouse = new DoubleClickPickingModalGraphMouse<NodeWrapper, NodeWrapper>();
 		mouse.add(new AbstractPopupGraphMousePlugin() {
@@ -455,7 +423,7 @@ public class GraphViewComponent extends JPanel implements MainViewComponent,
 				NodeWrapper node = pickSupport.getVertex(layout, e.getX(), e
 						.getY());
 				if (node == null) {
-					return;
+					// return;
 				}
 				fireNodeSelected(node);
 			}
@@ -475,19 +443,25 @@ public class GraphViewComponent extends JPanel implements MainViewComponent,
 			return;
 		}
 
-		if (!(model instanceof GraphParrotModel)) {
-			throw new IllegalArgumentException("model must be a graph model");
-		}
-
 		this.model = model;
-		graph = ((GraphParrotModel) model).asGraph();
+		graph = ((GraphParrotModel) model.asGraphModel()).asGraph();
 		popup = new NodeWrapperPopupMenu(SwingUtilities.getRoot(this), model);
 
 		model.addParrotModelListener(new ParrotModelListener() {
 			@Override
 			public void highlightsChanged() {
 				SwingUtilities.invokeLater(new Runnable() {
+					@Override
+					public void run() {
+						vv.fireStateChanged();
+						vv.repaint();
+					}
+				});
+			}
 
+			@Override
+			public void versionChanged() {
+				SwingUtilities.invokeLater(new Runnable() {
 					@Override
 					public void run() {
 						vv.fireStateChanged();

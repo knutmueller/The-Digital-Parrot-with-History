@@ -187,7 +187,7 @@ public class TableViewComponent extends JScrollPane implements MainViewComponent
 
 		model.addParrotModelListener(new TableViewModelListener());
 		
-		TableModel tableModel = ((TableParrotModel) model).asTableModel();
+		TableModel tableModel = ((TableParrotModel) model.asListModel()).asTableModel();
 		table.setModel(tableModel);
 		rowSorter = new TableRowSorter<TableParrotModel>((TableParrotModel) tableModel);
 		

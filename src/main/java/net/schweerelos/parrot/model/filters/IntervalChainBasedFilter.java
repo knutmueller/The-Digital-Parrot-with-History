@@ -22,7 +22,6 @@ package net.schweerelos.parrot.model.filters;
 
 import net.schweerelos.parrot.model.NodeWrapper;
 import net.schweerelos.parrot.model.NotTimedThingException;
-import net.schweerelos.parrot.model.ParrotModel;
 import net.schweerelos.parrot.model.TimedThingsHelper;
 import net.schweerelos.timeline.model.IntervalChain;
 
@@ -34,11 +33,9 @@ import com.hp.hpl.jena.ontology.OntResource;
 
 public class IntervalChainBasedFilter extends SimpleNodeFilter {
 	private IntervalChain<NodeWrapper> intervals;
-	private ParrotModel model;
 	
-	public IntervalChainBasedFilter(IntervalChain<NodeWrapper> intervals, ParrotModel model) {
+	public IntervalChainBasedFilter(IntervalChain<NodeWrapper> intervals) {
 		this.intervals = intervals;	
-		this.model = model;
 	}
 	
 	protected boolean matches(NodeWrapper nodeWrapper) {
@@ -51,12 +48,12 @@ public class IntervalChainBasedFilter extends SimpleNodeFilter {
 			return false;
 		}
 		OntResource node = nodeWrapper.getOntResource();
-		if (!TimedThingsHelper.isTimedThing(node, model)) {
+		if (!TimedThingsHelper.isTimedThing(node)) {
 			return false;
 		}
 		try {
-			DateTime startsAt = TimedThingsHelper.extractStartDate(node, model);
-			DateTime endsAt = TimedThingsHelper.extractEndDate(node, model);
+			DateTime startsAt = TimedThingsHelper.extractStartDate(node);
+			DateTime endsAt = TimedThingsHelper.extractEndDate(node);
 			return intervals.contains(new Interval(startsAt, endsAt));
 		} catch (NotTimedThingException ntte) {
 			return false;

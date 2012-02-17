@@ -166,7 +166,7 @@ public class NodeWrapper implements Comparable<NodeWrapper> {
 	}
 	
 
-	private static String extractLabel(Literal literal) {
+	protected static String extractLabel(Literal literal) {
 		String label;
 		if (literal.getDatatype() == null) {
 			label = literal.getLexicalForm();
@@ -182,7 +182,7 @@ public class NodeWrapper implements Comparable<NodeWrapper> {
 		return label;
 	}
 	
-	private static String extractLabel(OntResource resource) {
+	protected static String extractLabel(OntResource resource) {
 		String result;
 		String enLabel = resource.getLabel("en");
 		if (enLabel != null && !enLabel.equals("")) {

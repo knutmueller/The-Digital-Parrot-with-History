@@ -27,6 +27,7 @@ import java.util.EventListener;
 public interface ParrotModelListener extends EventListener {
 	public void highlightsChanged();
 	public void restrictionsChanged(Collection<NodeWrapper> currentlyRestricted);
+	public void versionChanged();
 	
 	public void modelBusy();
 	public void modelIdle();

@@ -21,6 +21,10 @@
 
 package net.schweerelos.parrot.model;
 
+import java.util.HashSet;
+import java.util.Map.Entry;
+import java.util.Set;
+
 import net.schweerelos.timeline.model.PayloadInterval;
 import net.schweerelos.timeline.model.IntervalChain;
 
@@ -38,6 +42,9 @@ import com.hp.hpl.jena.rdf.model.Property;
 import com.hp.hpl.jena.rdf.model.RDFNode;
 import com.hp.hpl.jena.rdf.model.Resource;
 import com.hp.hpl.jena.util.iterator.ExtendedIterator;
+import com.hp.hpl.jena.util.iterator.NiceIterator;
+
+import de.kmamut.parrot.history.changes.Version;
 
 public class TimedThingsHelper {
 	private static final String TIMED_THING = "http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#TimedThing";
@@ -52,22 +59,36 @@ public class TimedThingsHelper {
 		Resource timedThingClass = model.createClass(TIMED_THING);
 
 		IntervalChain<NodeWrapper> timelineModel = new IntervalChain<NodeWrapper>();
-		ExtendedIterator<Individual> instances = model
-				.listIndividuals(timedThingClass);
+		
+		ExtendedIterator<Individual> instances = NiceIterator.emptyIterator();
+		if (pModel instanceof ParrotModelWithHistory)
+			for (Entry<Version, OntModel> mapEntry : ((ParrotModelWithHistory) pModel).getVersionedOntModels().entrySet()) {
+				model.createClass(TIMED_THING);
+				instances = instances.andThen(mapEntry.getValue().listIndividuals(timedThingClass));
+			}
+		else
+			instances = model.listIndividuals(timedThingClass);
+		
+		Set<NodeWrapper> processedNodes = new HashSet<NodeWrapper>();
+		
 		while (instances.hasNext()) {
 			Individual instance = instances.next();
 			final NodeWrapper node = pModel.getNodeWrapper(instance);
 
+			if (processedNodes.contains(node))
+				continue;
+			processedNodes.add(node);
+			
 			DateTime startsAt;
 			DateTime endsAt;
 			try {
-				startsAt = extractStartDate(instance, model);
+				startsAt = extractStartDate(instance);
 			} catch (NotTimedThingException e) {
 				// ignore this individual
 				continue;
 			}
 			try {
-				endsAt = extractEndDate(instance, model);
+				endsAt = extractEndDate(instance);
 			} catch (NotTimedThingException e) {
 				// ignore this individual
 				continue;
@@ -116,6 +137,9 @@ public class TimedThingsHelper {
 			};
 			timelineModel.add(interval);
 		}
+		
+		processedNodes.clear();
+		
 		return timelineModel;
 	}
 
@@ -131,30 +155,19 @@ public class TimedThingsHelper {
 	 * @return true if the node is a timedthing with reasonably well-known
 	 *         boundaries.
 	 */
-	public static boolean isTimedThing(OntResource node, ParrotModel pModel) {
-		OntModel model = pModel.getOntModel();
+	public static boolean isTimedThing(OntResource node) {
 		if (isAbsolutelyTimedThing(node)) {
 			return true;
 		}
-		return isIndirectlyTimedThing(node, model);
+		return isIndirectlyTimedThing(node);
 	}
 
-	public static DateTime extractStartDate(OntResource subject,
-			ParrotModel model) throws NotTimedThingException {
-		return extractStartDate(subject, model.getOntModel());
-	}
-
-	public static DateTime extractEndDate(OntResource subject, ParrotModel model)
-			throws NotTimedThingException {
-		return extractEndDate(subject, model.getOntModel());
-	}
-
-	private static DateTime extractStartDate(OntResource subject, OntModel model)
+	public static DateTime extractStartDate(OntResource subject)
 			throws NotTimedThingException {
 		if (isAbsolutelyTimedThing(subject)) {
-			return extractAbsoluteDate(subject, model, STARTS_AT);
-		} else if (isIndirectlyTimedThing(subject, model)) {
-			return extractNearestDate(subject, model, STARTS_AT, true);
+			return extractAbsoluteDate(subject, STARTS_AT);
+		} else if (isIndirectlyTimedThing(subject)) {
+			return extractNearestDate(subject, STARTS_AT, true);
 		}
 		throw new NotTimedThingException(subject + " is not a timed thing");
 	}
@@ -170,8 +183,6 @@ public class TimedThingsHelper {
 	 *            assumption is that the subject is in indirectly timed thing
 	 *            (ie {@code TimedThingsHelper#isIndirectlyTimedThing(subject,
 	 *            model)} is true).
-	 * @param model
-	 *            the model from which the subject has been taken.
 	 * @param propertyName
 	 *            name of the property to use (would normally be {@code
 	 *            TimedThingsHelper#STARTS_AT} or {@code
@@ -185,11 +196,10 @@ public class TimedThingsHelper {
 	 *             if the subject isn't timed
 	 */
 	private static DateTime extractNearestDate(OntResource subject,
-			OntModel model, String propertyName, boolean before)
-			throws NotTimedThingException {
+			String propertyName, boolean before) throws NotTimedThingException {
 		DateTime currentBestCandidate = null;
 
-		Property duringProperty = model.createProperty(DURING);
+		Property duringProperty = subject.getOntModel().createProperty(DURING);
 		// TODO #42 this should go through before and after as well
 		if (!subject.hasProperty(duringProperty)) {
 			throw new NotTimedThingException(subject
@@ -199,8 +209,7 @@ public class TimedThingsHelper {
 		while (values.hasNext()) {
 			RDFNode value = values.next();
 			if (isAbsolutelyTimedThing(value)) {
-				DateTime valueDate = extractAbsoluteDate(value, model,
-						propertyName);
+				DateTime valueDate = extractAbsoluteDate(value, propertyName);
 				boolean betterThanCurrentBest = false;
 				if (currentBestCandidate == null) {
 					betterThanCurrentBest = true;
@@ -217,10 +226,9 @@ public class TimedThingsHelper {
 	}
 
 	private static DateTime extractAbsoluteDate(RDFNode subject,
-			OntModel model, String propertyName) throws NotTimedThingException {
+			String propertyName) throws NotTimedThingException {
 		if (subject.canAs(OntResource.class)) {
-			return extractAbsoluteDate(subject.as(OntResource.class), model,
-					propertyName);
+			return extractAbsoluteDate(subject.as(OntResource.class), propertyName);
 		}
 		throw new NotTimedThingException(
 				"can't extract date for nodes that aren't OntResources");
@@ -234,8 +242,6 @@ public class TimedThingsHelper {
 	 *            the subject for which a date should be extracted. The
 	 *            assumption is that this is an absolutely timed thing, ie
 	 *            {@code #isAbsolutelyTimedThing(subject, model)} is true.
-	 * @param model
-	 *            the model from which the subject has been taken.
 	 * @param propertyName
 	 *            name of the property to use (would normally be {@code
 	 *            TimedThingsHelper#STARTS_AT} or {@code
@@ -246,18 +252,18 @@ public class TimedThingsHelper {
 	 *             if the subject isn't timed
 	 */
 	private static DateTime extractAbsoluteDate(OntResource subject,
-			OntModel model, String propertyName) throws NotTimedThingException {
-		Property prop = model.createProperty(propertyName);
+			String propertyName) throws NotTimedThingException {
+		Property prop = subject.getOntModel().createProperty(propertyName);
 		RDFNode propValue = subject.getPropertyValue(prop);
 		return extractDate(propValue);
 	}
 
-	private static DateTime extractEndDate(OntResource subject, OntModel model)
+	public static DateTime extractEndDate(OntResource subject)
 			throws NotTimedThingException {
 		if (isAbsolutelyTimedThing(subject)) {
-			return extractAbsoluteDate(subject, model, ENDS_AT);
-		} else if (isIndirectlyTimedThing(subject, model)) {
-			return extractNearestDate(subject, model, ENDS_AT, false);
+			return extractAbsoluteDate(subject, ENDS_AT);
+		} else if (isIndirectlyTimedThing(subject)) {
+			return extractNearestDate(subject, ENDS_AT, false);
 		}
 		throw new NotTimedThingException(subject + " is not a timed thing");
 	}
@@ -282,12 +288,10 @@ public class TimedThingsHelper {
 	 * check whether it happened during an AbsolutelyTimedThing
 	 * 
 	 * @param node
-	 * @param model
 	 * @return
 	 */
-	private static boolean isIndirectlyTimedThing(OntResource node,
-			OntModel model) {
-		Property duringProperty = model.createProperty(DURING);
+	private static boolean isIndirectlyTimedThing(OntResource node) {
+		Property duringProperty = node.getOntModel().createProperty(DURING);
 		if (!node.hasProperty(duringProperty)) {
 			return false;
 		}

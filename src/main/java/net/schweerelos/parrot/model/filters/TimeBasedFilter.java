@@ -22,7 +22,6 @@ package net.schweerelos.parrot.model.filters;
 
 import net.schweerelos.parrot.model.NodeWrapper;
 import net.schweerelos.parrot.model.NotTimedThingException;
-import net.schweerelos.parrot.model.ParrotModel;
 import net.schweerelos.parrot.model.TimedThingsHelper;
 
 import org.apache.log4j.Logger;
@@ -34,11 +33,9 @@ import com.hp.hpl.jena.ontology.OntResource;
 public class TimeBasedFilter extends SimpleNodeFilter {
 
 	private Interval interval;
-	private ParrotModel model;
 
-	public TimeBasedFilter(Interval interval, ParrotModel parrotModel) {
+	public TimeBasedFilter(Interval interval) {
 		this.interval = interval;
-		this.model = parrotModel;
 	}
 
 	@Override
@@ -57,15 +54,15 @@ public class TimeBasedFilter extends SimpleNodeFilter {
 			return accept(timedThing, inInterval);
 		}
 		OntResource node = nodeWrapper.getOntResource();
-		if (!TimedThingsHelper.isTimedThing(node, model)) {
+		if (!TimedThingsHelper.isTimedThing(node)) {
 			timedThing = false;
 			return accept(timedThing, inInterval);
 		}
 
 		try {
 			timedThing = true;
-			DateTime startsAt = TimedThingsHelper.extractStartDate(node, model);
-			DateTime endsAt = TimedThingsHelper.extractEndDate(node, model);
+			DateTime startsAt = TimedThingsHelper.extractStartDate(node);
+			DateTime endsAt = TimedThingsHelper.extractEndDate(node);
 			inInterval = interval.contains(new Interval(startsAt, endsAt));
 			return accept(timedThing, inInterval);
 		} catch (NotTimedThingException ntte) {
@@ -77,7 +74,7 @@ public class TimeBasedFilter extends SimpleNodeFilter {
 	private boolean accept(boolean timedThing, boolean inInterval) {
 		if (getMode() == Mode.HIGHLIGHT) {
 			return timedThing && inInterval;
-		} else { // mode must be restrict
+		} else  { // getMode() == Mode.RESTRICT
 			return timedThing && !inInterval;
 		}
 	}

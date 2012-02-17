@@ -25,7 +25,7 @@ import java.util.Set;
 
 public abstract class Filter {
 
-	public enum Mode { HIGHLIGHT, RESTRICT }
+	public enum Mode { HIGHLIGHT, RESTRICT, VERSION }
 
 	private Mode mode = Mode.HIGHLIGHT;
 	

@@ -42,8 +42,9 @@ public abstract class ParrotModelFactory {
 	private static final String URL_TIME_AND_PLACE = "http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl";
 	private static final String URL_WGS84_POS = "http://www.w3.org/2003/01/geo/wgs84_pos";
 	private static final String URL_DIGITAL_PARROT = "http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl";
+	private static final String URL_MUSIC = "http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl";
 	
-	public enum Style { TABLE, GRAPH, COMBINED };
+	public enum Style { TABLE, GRAPH, COMBINED, GRAPH_WITH_HISTORY };
 
 	public abstract ParrotModel createModel();
 	
@@ -67,7 +68,8 @@ public abstract class ParrotModelFactory {
 			docManager.addAltEntry(URL_INTERACTION, "file:" + cacheDir.getAbsolutePath() + File.separator + "Interaction.owl");
 			docManager.addAltEntry(URL_CONFERENCES, "file:" + cacheDir.getAbsolutePath() + File.separator + "Conferences.owl");
 			docManager.addAltEntry(URL_DIGITAL_PARROT, "file:" + cacheDir.getAbsolutePath() + File.separator + "DigitalParrot.owl");
-		
+			docManager.addAltEntry(URL_MUSIC, "file:" + cacheDir.getAbsolutePath() + File.separator + "Music.owl");
+			
 			try {
 				model.read(new FileReader(new File(cacheDir + File.separator + "annotated-types.rdf")), null);
 			} catch (FileNotFoundException e) {
@@ -82,6 +84,8 @@ public abstract class ParrotModelFactory {
 			return new GraphModelFactory(model);
 		case COMBINED:
 			return new CombinedModelFactory(model);
+		case GRAPH_WITH_HISTORY:
+			return new GraphModelWithHistoryFactory(model);
 		default:
 			throw new IllegalArgumentException("No such style: " + style);
 		}

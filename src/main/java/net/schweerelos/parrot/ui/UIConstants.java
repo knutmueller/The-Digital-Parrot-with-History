@@ -65,6 +65,18 @@ public final class UIConstants {
 	public static final Color THIRD_ACCENT_LIGHT = new Color(0xbeceba);
 	public static final Color THIRD_ACCENT_LIGHTEST = new Color(0xf1f8ef);
 	
+	public static final Color ADDITION = Color.GREEN.brighter();
+	public static final Color T_ADDITION = transparentVersion(ADDITION);
+	public static final Color TT_ADDITION = transparentVersion(ADDITION, DEFAULT_TT_ALPHA);
+	
+	public static final Color REMOVAL = Color.RED.brighter();
+	public static final Color T_REMOVAL = transparentVersion(REMOVAL);
+	public static final Color TT_REMOVAL = transparentVersion(REMOVAL, DEFAULT_TT_ALPHA);
+	
+	public static final Color CHANGE = Color.YELLOW.brighter();
+	public static final Color T_CHANGE = transparentVersion(CHANGE);
+	public static final Color TT_CHANGE = transparentVersion(CHANGE, DEFAULT_TT_ALPHA);
+	
 	private UIConstants() {
 		// private constructor to hide it
 	}

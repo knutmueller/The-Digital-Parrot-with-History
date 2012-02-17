@@ -53,6 +53,16 @@
       <name>Unofficial Maven repository for Pellet</name>
       <url>http://on.cs.unibas.ch/maven/repository</url>
     </repository>
+    <repository>
+  	  <id>mvnrepository.com</id>
+  	  <name>MVNrepository</name>
+  	  <url>http://mvnrepository.com/</url>
+  	</repository>
+  	<repository>
+  		<id>maven.aksw.org/archavia</id>
+  		<name>Apache Archavia</name>
+  		<url>http://maven.aksw.org/archiva/repository/internal</url>
+  	</repository>  	
   </repositories>
   <dependencies>
     <dependency>
@@ -83,7 +93,7 @@
     <dependency>
       <groupId>com.owldl</groupId>
       <artifactId>pellet</artifactId>
-      <version>2.2.2</version>
+      <version>2.3.0</version>
     </dependency>
     <dependency>
       <groupId>commons-cli</groupId>
@@ -129,6 +139,16 @@
       <groupId>com.webrenderer</groupId>
       <artifactId>corecomponents-swing-osx</artifactId>
       <version>5.0.9</version>
+    </dependency>
+    <dependency>
+    	<groupId>args4j</groupId>
+    	<artifactId>args4j</artifactId>
+    	<version>2.0.16</version>
+    </dependency>
+    <dependency>
+    	<groupId>com.owldl</groupId>
+    	<artifactId>pellet-jena</artifactId>
+    	<version>2.3.0</version>
     </dependency>
   </dependencies>
   <issueManagement>

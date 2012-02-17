@@ -68,4 +68,22 @@ public class UserInterfaceManager {
 		}
 	}
 
+	/**
+	 * Create and return slider as history navigator component.
+	 * @param helper The HistoryNavigatorHelper which provides shared data used by all history navigators. 
+	 * @return HistorySliderNavigator component.
+	 */
+	public NavigatorComponent createHistorySliderNavigationComponent(HistoryNavigatorHelper helper) {
+		return new HistorySliderNavigator(helper);
+	}
+
+	/**
+	 * Create and return list as history navigator component.
+	 * @param helper The HistoryNavigatorHelper which provides shared data used by all history navigators. 
+	 * @return HistoryListNavigator component.
+	 */
+	public NavigatorComponent createHistoryListNavigationComponent(HistoryNavigatorHelper helper) {
+		return new HistoryListNavigator(helper);
+	}
+
 }

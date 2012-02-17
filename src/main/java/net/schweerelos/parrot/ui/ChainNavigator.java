@@ -92,10 +92,8 @@ public class ChainNavigator extends AbstractNavigatorPanel implements
 		constraints.gridheight = 2;
 
 		JScrollPane chainScrollPane = new JScrollPane(chainPanel);
-		chainScrollPane
-				.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_NEVER);
-		chainScrollPane
-				.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
+		chainScrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_NEVER);
+		chainScrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
 		chainScrollPane.setBorder(BorderFactory.createEmptyBorder());
 		add(chainScrollPane, constraints);
 

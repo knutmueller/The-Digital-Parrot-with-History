@@ -46,4 +46,8 @@ public class ParrotModelAdapter implements ParrotModelListener {
 	public void restrictionsChanged(Collection<NodeWrapper> currentlyRestricted) {
 	}
 
+	@Override
+	public void versionChanged() {
+	}
+
 }

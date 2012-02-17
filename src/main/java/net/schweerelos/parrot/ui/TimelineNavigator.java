@@ -246,8 +246,7 @@ public class TimelineNavigator extends AbstractNavigatorPanel {
 			new SwingWorker<Void, Void>() {
 				@Override
 				protected Void doInBackground() throws Exception {
-					TimeBasedFilter filter = new TimeBasedFilter(interval,
-							getModel());
+					TimeBasedFilter filter = new TimeBasedFilter(interval);
 					filter.setMode(Mode.RESTRICT);
 					if (lastRestrictingFilter != null) {
 						removeFilter(lastRestrictingFilter);
@@ -276,8 +275,7 @@ public class TimelineNavigator extends AbstractNavigatorPanel {
 			new SwingWorker<Void, Void>() {
 				@Override
 				protected Void doInBackground() throws Exception {
-					IntervalChainBasedFilter filter = new IntervalChainBasedFilter(
-							chain, getModel());
+					IntervalChainBasedFilter filter = new IntervalChainBasedFilter(chain);
 					filter.setMode(Mode.HIGHLIGHT);
 					if (lastHighlightFilter != null) {
 						removeFilter(lastHighlightFilter);

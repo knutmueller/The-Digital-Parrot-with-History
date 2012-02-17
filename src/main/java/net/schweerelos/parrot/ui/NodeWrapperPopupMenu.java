@@ -36,7 +36,8 @@ import javax.swing.JMenu;
 import javax.swing.JPopupMenu;
 import javax.swing.SwingUtilities;
 
-import net.schweerelos.parrot.CombinedParrotApp;
+import de.kmamut.parrot.ParrotAppFrame;
+
 import net.schweerelos.parrot.model.NodeWrapper;
 import net.schweerelos.parrot.model.ParrotModel;
 
@@ -136,10 +137,10 @@ public class NodeWrapperPopupMenu extends JPopupMenu {
 	}
 
 	private void addActionsForNode(NodeWrapper node) {
-		CombinedParrotApp app = null;
+		ParrotAppFrame app = null;
 		try {
 			Component root = SwingUtilities.getRoot(parentComponent);
-			app = (CombinedParrotApp) root;
+			app = (ParrotAppFrame) root;
 		} catch (ClassCastException cce) {
 			return;
 		}
@@ -165,10 +166,10 @@ public class NodeWrapperPopupMenu extends JPopupMenu {
 		JMenu propMenu = new JMenu(typeName);
 		propMenu.setMnemonic(typeName.charAt(0));
 		
-		CombinedParrotApp app = null;
+		ParrotAppFrame app = null;
 		try {
 			Component root = SwingUtilities.getRoot(parentComponent);
-			app = (CombinedParrotApp) root;
+			app = (ParrotAppFrame) root;
 		} catch (ClassCastException cce) {
 			return propMenu;
 		}
