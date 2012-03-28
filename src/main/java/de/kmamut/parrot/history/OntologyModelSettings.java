@@ -40,7 +40,6 @@ public class OntologyModelSettings {
 	private static final Map<String, String> URL_MAP = createParrotUrlMap();
 	protected static OntologyUrlMap createParrotUrlMap() {
 		OntologyUrlMap map = new OntologyUrlMap(localDirectory, uriPrefix);
-		map.put("Conferences/2008/11/Conferences.owl", "Conferences.owl");
 		map.put("DigitalParrot/2009/02/DigitalParrot.owl", "DigitalParrot.owl");
 		map.put("History/2011/11/History.owl", "History.owl");
 		map.put("Interaction/2008/11/Interaction.owl", "Interaction.owl");
@@ -76,7 +75,6 @@ public class OntologyModelSettings {
 	public static final Map<String, String> PREFIX_MAP = createPrefixMap();
     protected static Map<String, String> createPrefixMap() {
     	Map<String,String> map = new HashMap<String,String>();
-    	map.put("conf", "http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#");
     	map.put("foaf", "http://xmlns.com/foaf/0.1/");
     	map.put("interact", "http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#");
     	map.put("parrot", "http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#");

@@ -34,7 +34,7 @@
         <subClassOf rdf:parseType="Resource">
             <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
             <owl:onProperty rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#newContact"/>
-            <owl:someValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+            <owl:someValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
         </subClassOf>
         <owl:disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#Conversation"/>
         <owl:disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#Topic"/>
@@ -60,7 +60,7 @@
 
     <owl:ObjectProperty rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#conversationPartnerIn">
         <comment xml:lang="en">To link a person to the conversations that one had with this person</comment>
-        <domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
         <label xml:lang="en">takes part in</label>
         <range rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#Conversation"/>
         <owl:inverseOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#hasConversationPartner"/>
@@ -69,7 +69,7 @@
     <owl:FunctionalProperty rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#firstMet">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
         <comment xml:lang="en">To describe since when one knows a person.</comment>
-        <domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
         <label xml:lang="en">was first met</label>
         <range rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#FirstMeeting"/>
         <owl:inverseOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#newContact"/>
@@ -79,7 +79,7 @@
         <comment xml:lang="en">To link a conversation to the people one spoke with.</comment>
         <domain rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#Conversation"/>
         <label xml:lang="en">with</label>
-        <range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
         <owl:inverseOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#conversationPartnerIn"/>
     </owl:ObjectProperty>
 
@@ -94,7 +94,7 @@
     <owl:FunctionalProperty rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#introducedAt">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
         <comment xml:lang="en">To link a person to the occasion when one was introduced to her/him</comment>
-        <domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
         <label xml:lang="en">was introduced at</label>
         <range rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#Introduction"/>
         <subPropertyOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#firstMet"/>

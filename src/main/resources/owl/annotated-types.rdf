@@ -2,130 +2,6 @@
     xmlns:parrot="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 
-    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Break">
-        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Conference">
-        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#ConferenceSeries">
-        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Demo">
-        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#DemoSession">
-        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#KeynoteTalk">
-        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Poster">
-        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#PosterPresentation">
-        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#PosterSession">
-        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Presentation">
-        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#PresentationSession">
-        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Session">
-        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#SocialEvent">
-        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Talk">
-        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Track">
-        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Tutorial">
-        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#TutorialSession">
-        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#Workshop">
-        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#WorkshopSession">
-        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#chairs">
-        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#hasChair">
-        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#hasInstance">
-        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#hasPresentation">
-        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#hasPresenter">
-        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#hasSession">
-        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#hasTrack">
-        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#inSession">
-        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#partOfSeries">
-        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#presents">
-        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#sessionIn">
-        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
-    </rdf:Description>
-
-    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#trackIn">
-        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
-    </rdf:Description>
-
     <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#Conversation">
         <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
     </rdf:Description>
@@ -243,6 +119,184 @@
     </rdf:Description>
     
     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person">
-    	<showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
+        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
     </rdf:Description>
+    
+    <!-- added by Knut Müller -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Group">
+        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
+    </rdf:Description>
+    
+    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#City">
+        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
+    </rdf:Description>
+    
+    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#Building">
+        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
+    </rdf:Description>
+    
+    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#Room">
+        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
+    </rdf:Description>
+    
+    <!-- for musical composition, rehearsal and performance -->
+    
+    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#Composition">
+        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#Concert">
+        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#Performance">
+        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#Rehearsal">
+        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#RehearsalPhase">
+        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#Instrument">
+        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#Instrumentation">
+        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#Musician">
+        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#Ensemble">
+        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#Composer">
+        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#Conductor">
+        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
+    </rdf:Description>
+
+
+    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#compositionPlayedBy">
+        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#hasComposer">
+        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#hasConductor">
+        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#hasDebutPerformance">
+        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
+    </rdf:Description>
+    
+    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#hasInstrumentation">
+        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
+    </rdf:Description>
+    
+    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#hasPerformance">
+        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
+    </rdf:Description>
+    
+    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#hasPerformedComposition">
+        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
+    </rdf:Description>
+    
+    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#hasPerformingArtist">
+        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
+    </rdf:Description>
+    
+    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#hasPersonInstrumentation">
+        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
+    </rdf:Description>
+    
+    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#hasRehearsal">
+        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
+    </rdf:Description>
+    
+    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#hasRehearsalComposition">
+        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
+    </rdf:Description>
+    
+    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#hasRehearsingArtist">
+        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#instrumentPlayedBy">
+        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#instrumentationPlayedBy">
+        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#isComposerOf">
+        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#isConductorOf">
+        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#isDebutPerformanceOf">
+        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
+    </rdf:Description>
+    
+    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#isInstrumentationOf">
+        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#partOfConcert">
+        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#partOfGroupInstrumentation">
+        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#partOfPerformance">
+        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#partOfRehearsal">
+        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#partOfRehearsalPhase">
+        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#playsComposition">
+        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#playsInstrument">
+        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#playsInstrumentation">
+        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/member">
+        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/member_of">
+        <showThisType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary</showThisType>
+    </rdf:Description>
+
 </rdf:RDF>

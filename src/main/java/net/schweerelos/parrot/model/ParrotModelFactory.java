@@ -36,7 +36,7 @@ import com.hp.hpl.jena.rdf.model.ModelFactory;
 
 public abstract class ParrotModelFactory {
 
-	private static final String URL_CONFERENCES = "http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl";
+	// private static final String URL_CONFERENCES = "http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl";
 	private static final String URL_INTERACTION = "http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl";
 	private static final String URL_FOAF = "http://www.mindswap.org/2003/owl/foaf";
 	private static final String URL_MEMORIES = "http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Memories/2008/11/Memories.owl";
@@ -67,7 +67,7 @@ public abstract class ParrotModelFactory {
 			docManager.addAltEntry(URL_MEMORIES, "file:" + cacheDir.getAbsolutePath() + File.separator + "Memories.owl");
 			docManager.addAltEntry(URL_FOAF, "file:" + cacheDir.getAbsolutePath() + File.separator + "foaf");
 			docManager.addAltEntry(URL_INTERACTION, "file:" + cacheDir.getAbsolutePath() + File.separator + "Interaction.owl");
-			docManager.addAltEntry(URL_CONFERENCES, "file:" + cacheDir.getAbsolutePath() + File.separator + "Conferences.owl");
+			// docManager.addAltEntry(URL_CONFERENCES, "file:" + cacheDir.getAbsolutePath() + File.separator + "Conferences.owl");
 			docManager.addAltEntry(URL_DIGITAL_PARROT, "file:" + cacheDir.getAbsolutePath() + File.separator + "DigitalParrot.owl");
 			docManager.addAltEntry(URL_MUSIC, "file:" + cacheDir.getAbsolutePath() + File.separator + "Music.owl");
 			

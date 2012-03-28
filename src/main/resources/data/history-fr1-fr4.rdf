@@ -4,7 +4,6 @@
     xmlns:parrot="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:timeplace="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#"
-    xmlns:conf="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
     xmlns:history="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"

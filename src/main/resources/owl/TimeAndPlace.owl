@@ -247,4 +247,19 @@
         </owl:oneOf>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     </rdf:Description>
+
+    <owl:Class rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#City">
+        <Tim:coordPrecision rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#CityPrecision"/>
+        <label xml:lang="en">City</label>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#Building">
+        <Tim:coordPrecision rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#BuildingPrecision"/>
+        <label xml:lang="en">Building</label>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#Room">
+        <Tim:coordPrecision rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#RoomPrecision"/>
+        <label xml:lang="en">Room</label>
+    </owl:Class>
 </rdf:RDF>

@@ -1,0 +1,141 @@
+<rdf:RDF xmlns="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+  <owl:Ontology rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl">
+    <rdfs:comment xml:lang="en">History Concepts Ontology. This Ontology contains concepts that describes the history of an Digital Parrot ontology.</rdfs:comment>
+  </owl:Ontology>
+
+  <!-- Version Properties -->
+
+  <owl:DatatypeProperty rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#ontologyIRI">
+    <rdfs:domain rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Version"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#ontologyIRI"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#versionIRI">
+    <rdfs:domain rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Version"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#versionIRI"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#priorVersionIRI">
+    <rdfs:domain rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Version"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#priorVersion"/>
+  </owl:DatatypeProperty>
+
+  <owl:ObjectProperty rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#priorVersion">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:domain rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Version"/>
+    <rdfs:range rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Version"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#nextVersion">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:domain rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Version"/>
+    <rdfs:range rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Version"/>
+    <owl:inverseOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#priorVersion"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#downGradeWith">
+    <rdfs:range rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#ChangeSet"/>
+    <rdfs:domain rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Version"/>
+    <owl:inverseOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#newVersion"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#upGradeWith">
+    <rdfs:range rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#ChangeSet"/>
+    <rdfs:domain rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Version"/>
+    <owl:inverseOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#oldVersion"/>
+  </owl:ObjectProperty>
+
+  <!-- ChangeSet Properties -->
+
+  <owl:ObjectProperty rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#hasAddition">
+    <rdfs:range rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+    <rdfs:domain rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#ChangeSet"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#hasRemoval">
+    <rdfs:domain rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#ChangeSet"/>
+    <rdfs:range rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Removal"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#hasChange">
+    <rdfs:range rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Change"/>
+    <rdfs:domain rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#ChangeSet"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#fromVersion">
+    <rdfs:domain rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#ChangeSet"/>
+    <rdfs:range rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Version"/>
+    <owl:equivalentProperty rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#oldVersion"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#toVersion">
+    <rdfs:domain rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#ChangeSet"/>
+    <rdfs:range rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Version"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#oldVersion">
+    <rdfs:domain rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#ChangeSet"/>
+    <rdfs:range rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Version"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#newVersion">
+    <rdfs:domain rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#ChangeSet"/>
+    <owl:equivalentProperty rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#toVersion"/>
+  </owl:ObjectProperty>
+
+  <!-- Change Properties -->
+
+  <owl:ObjectProperty rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#subject">
+    <rdfs:domain rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Operation"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#predicate">
+    <rdfs:domain rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Operation"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#oldObject">
+    <rdfs:domain rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Operation"/>
+    <!-- <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/> -->
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#newObject">
+    <rdfs:domain rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Operation"/>
+    <!-- <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/> -->
+  </owl:ObjectProperty>
+
+
+  <!-- Change Classes -->
+
+  <owl:Class rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Operation"/>
+
+  <owl:Class rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition">
+    <rdfs:subClassOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Operation"/>
+    <owl:disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Removal"/>
+    <owl:disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Change"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Removal">
+    <rdfs:subClassOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Operation"/>
+    <owl:disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+    <owl:disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Change"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Change">
+    <rdfs:subClassOf rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Operation"/>
+    <owl:disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+    <owl:disjointWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Removal"/>
+  </owl:Class>
+
+  <!-- ChangeSet Classes -->
+
+  <owl:Class rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#ChangeSet"/>
+
+  <!-- Version Classes -->
+
+  <owl:Class rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Version"/>
+
+</rdf:RDF>

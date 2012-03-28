@@ -29,7 +29,6 @@
      xmlns:interact="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#">
     <owl:Ontology rdf:about="file:data/greenwind.n3">
         <owl:versionInfo>v2.0 2009-09-18T21:54:11</owl:versionInfo>
-        <!-- <owl:imports rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl"/> -->
         <owl:imports rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl"/>
         <owl:imports rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Memories/2008/11/Memories.owl"/>
         <owl:imports rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl"/>
