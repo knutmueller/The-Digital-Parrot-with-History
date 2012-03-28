@@ -25,7 +25,8 @@ import net.schweerelos.parrot.model.NodeWrapper;
 import edu.uci.ics.jung.visualization.control.DefaultModalGraphMouse;
 import edu.uci.ics.jung.visualization.control.GraphMousePlugin;
 
-public class DoubleClickPickingModalGraphMouse<T1, T2> extends DefaultModalGraphMouse<NodeWrapper, NodeWrapper> {
+public class DoubleClickPickingModalGraphMouse<T1, T2> extends
+		DefaultModalGraphMouse<NodeWrapper, NodeWrapper> {
 
 	private GraphMousePlugin doubleClickPickingPlugin;
 

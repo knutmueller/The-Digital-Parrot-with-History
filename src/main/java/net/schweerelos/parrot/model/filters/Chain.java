@@ -104,7 +104,8 @@ public class Chain {
 						|| propName.equals(ChainLink.TYPE_PROPERTY)) {
 					Object source = pce.getSource();
 					int index = chain.indexOf(source);
-					changeSupport.fireIndexedPropertyChange(CONTENTS_PROPERTY, index, null, source);
+					changeSupport.fireIndexedPropertyChange(CONTENTS_PROPERTY,
+							index, null, source);
 				}
 			}
 		};
@@ -314,7 +315,8 @@ public class Chain {
 			newSecondLast.addPropertyChangeListener(secondLastLinkListener);
 		}
 
-		changeSupport.firePropertyChange(LAST_LINK_PROPERTY, oldLast, chainLink);
+		changeSupport
+				.firePropertyChange(LAST_LINK_PROPERTY, oldLast, chainLink);
 		changeSupport.firePropertyChange(SIZE_PROPERTY, oldSize, newSize);
 	}
 
@@ -350,7 +352,8 @@ public class Chain {
 
 		if (oldSecondLast != newSecondLast) {
 			if (oldSecondLast != null) {
-				oldSecondLast.removePropertyChangeListener(secondLastLinkListener);
+				oldSecondLast
+						.removePropertyChangeListener(secondLastLinkListener);
 			}
 			if (newSecondLast != null) {
 				newSecondLast.addPropertyChangeListener(secondLastLinkListener);
@@ -389,7 +392,8 @@ public class Chain {
 		getLastLink().addPropertyChangeListener(lastLinkListener);
 		// we know there is no new second last link at this point
 
-		changeSupport.firePropertyChange(LAST_LINK_PROPERTY, oldLast, getLastLink());
+		changeSupport.firePropertyChange(LAST_LINK_PROPERTY, oldLast,
+				getLastLink());
 		changeSupport.firePropertyChange(SIZE_PROPERTY, oldSize, newSize);
 	}
 
@@ -399,7 +403,8 @@ public class Chain {
 
 	public boolean canChange(ChainLink link) {
 		return isLastLink(link)
-				|| (isSecondLastLink(link) && !getLastLink().hasInstance() && !getLastLink().hasType());
+				|| (isSecondLastLink(link) && !getLastLink().hasInstance() && !getLastLink()
+						.hasType());
 	}
 
 	public boolean canClear() {
@@ -442,7 +447,8 @@ public class Chain {
 		changeSupport.addPropertyChangeListener(l);
 	}
 
-	public void addPropertyChangeListener(String propertyName, PropertyChangeListener l) {
+	public void addPropertyChangeListener(String propertyName,
+			PropertyChangeListener l) {
 		changeSupport.addPropertyChangeListener(propertyName, l);
 	}
 
@@ -450,7 +456,8 @@ public class Chain {
 		changeSupport.removePropertyChangeListener(l);
 	}
 
-	public void removePropertyChangeListener(String propertyName, PropertyChangeListener l) {
+	public void removePropertyChangeListener(String propertyName,
+			PropertyChangeListener l) {
 		changeSupport.removePropertyChangeListener(propertyName, l);
 	}
 

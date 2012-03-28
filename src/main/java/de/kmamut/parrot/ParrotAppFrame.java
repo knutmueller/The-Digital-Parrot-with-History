@@ -1,3 +1,25 @@
+/*
+ * Copyright (C) 2012 Knut Müller,
+ * Copyright (C) 2011 Andrea Schweer
+ *
+ * This file is part of the Digital Parrot with History. 
+ *
+ * The Digital Parrot is free software; you can redistribute it and/or modify
+ * it under the terms of the Eclipse Public License as published by the Eclipse
+ * Foundation or its Agreement Steward, either version 1.0 of the License, or
+ * (at your option) any later version.
+ *
+ * The Digital Parrot with history is distributed in the hope that it will be
+ * useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the Eclipse Public
+ * License for more details.
+ *
+ * You should have received a copy of the Eclipse Public License along with the
+ * Digital Parrot. If not, see http://www.eclipse.org/legal/epl-v10.html. 
+ *
+ */
+
+
 package de.kmamut.parrot;
 
 import java.awt.BorderLayout;
@@ -41,7 +63,7 @@ import net.schweerelos.parrot.ui.HistoryNavigatorHelper;
 import net.schweerelos.parrot.ui.MainViewComponent;
 import net.schweerelos.parrot.ui.NavigatorComponent;
 import net.schweerelos.parrot.ui.ParrotStateListener;
-import net.schweerelos.parrot.ui.PickListener;
+//import net.schweerelos.parrot.ui.PickListener;
 import net.schweerelos.parrot.ui.UnknownStyleException;
 import net.schweerelos.parrot.ui.UserInterfaceManager;
 import javax.swing.JPanel;
@@ -183,24 +205,24 @@ public class ParrotAppFrame extends JFrame {
 		
 		LOG.debug("Create connections navigator.");
 		// connections
-		NavigatorComponent chainNavigator = uiManager.createChainNavigationComponent();
-		navigators.add(chainNavigator);
-
-		if (chainNavigator instanceof PickListener) {
-			for (MainViewComponent mainViewComponent : mainViews) {	
-				mainViewComponent.addPickListener((PickListener) chainNavigator);
-			}
-		}
-
-		if (chainNavigator.hasShowHideListener()) {
-			chainNavigator.asJComponent().addComponentListener(chainNavigator.getShowHideListener());
-		}
-
-		JToggleButton connectionsButton = setupNavigatorButton(chainNavigator);
-		navigatorsBar.add(connectionsButton);
-
-		bottomPanel.add(chainNavigator.asJComponent(), BorderLayout.SOUTH);
-		chainNavigator.asJComponent().setVisible(false);
+//		NavigatorComponent chainNavigator = uiManager.createChainNavigationComponent();
+//		navigators.add(chainNavigator);
+//
+//		if (chainNavigator instanceof PickListener) {
+//			for (MainViewComponent mainViewComponent : mainViews) {	
+//				mainViewComponent.addPickListener((PickListener) chainNavigator);
+//			}
+//		}
+//
+//		if (chainNavigator.hasShowHideListener()) {
+//			chainNavigator.asJComponent().addComponentListener(chainNavigator.getShowHideListener());
+//		}
+//
+//		JToggleButton connectionsButton = setupNavigatorButton(chainNavigator);
+//		navigatorsBar.add(connectionsButton);
+//
+//		bottomPanel.add(chainNavigator.asJComponent(), BorderLayout.SOUTH);
+//		chainNavigator.asJComponent().setVisible(false);
 		
 		LOG.debug("Create history navigator.");
 		// history navigator helper; needed to make sure that all history navigators operate on same data
