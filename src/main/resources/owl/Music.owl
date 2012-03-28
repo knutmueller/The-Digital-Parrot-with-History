@@ -1,0 +1,674 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY wgs84_pos "http://www.w3.org/2003/01/geo/wgs84_pos#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY Music "http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/" >
+    <!ENTITY music "http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#" >
+    <!ENTITY mem "http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Memories/2008/11/Memories.owl#" >
+    <!ENTITY interact "http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#" >
+    <!ENTITY timeplace "http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#" >
+    <!ENTITY parrot "http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#" >
+]>
+
+
+<rdf:RDF xmlns="&Music;Music.owl#"
+     xml:base="&Music;Music.owl"
+     xmlns:music="&Music;Music.owl#"
+     xmlns:wgs84_pos="http://www.w3.org/2003/01/geo/wgs84_pos#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:parrot="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:mem="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Memories/2008/11/Memories.owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:Music="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:timeplace="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#"
+     xmlns:interact="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#">
+    <owl:Ontology rdf:about="&Music;Music.owl#">
+        <rdfs:comment xml:lang="en">Vocabulary for describing the process of composing music.</rdfs:comment>
+        <owl:imports rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl"/>
+        <owl:imports rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl"/>
+        <owl:imports rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Memories/2008/11/Memories.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#compositionPlayedBy -->
+
+    <owl:ObjectProperty rdf:about="&Music;Music.owl#compositionPlayedBy">
+        <rdfs:label xml:lang="en">played by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#hasComposer -->
+
+    <owl:ObjectProperty rdf:about="&Music;Music.owl#hasComposer">
+        <rdfs:comment xml:lang="en">composer</rdfs:comment>
+        <rdfs:range rdf:resource="&Music;Music.owl#Composer"/>
+        <rdfs:domain rdf:resource="&Music;Music.owl#Composition"/>
+        <owl:inverseOf rdf:resource="&Music;Music.owl#isComposerOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#hasConductor -->
+
+    <owl:ObjectProperty rdf:about="&Music;Music.owl#hasConductor">
+        <rdfs:label xml:lang="en">condoctor</rdfs:label>
+        <rdfs:domain rdf:resource="&Music;Music.owl#Artist"/>
+        <rdfs:range rdf:resource="&Music;Music.owl#Conductor"/>
+        <owl:inverseOf rdf:resource="&Music;Music.owl#isConductorOf"/>
+        <rdfs:domain rdf:resource="&foaf;Group"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#hasDebutPerformance -->
+
+    <owl:ObjectProperty rdf:about="&Music;Music.owl#hasDebutPerformance">
+        <rdfs:comment xml:lang="en">debuted</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#hasInstrumentation -->
+
+    <owl:ObjectProperty rdf:about="&Music;Music.owl#hasInstrumentation">
+        <rdfs:label xml:lang="en">has part</rdfs:label>
+        <rdfs:domain rdf:resource="&Music;Music.owl#Composition"/>
+        <rdfs:range rdf:resource="&Music;Music.owl#Instrumentation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#hasPerformance -->
+
+    <owl:ObjectProperty rdf:about="&Music;Music.owl#hasPerformance">
+        <rdfs:comment xml:lang="en">has</rdfs:comment>
+        <owl:inverseOf rdf:resource="&Music;Music.owl#partOfConcert"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#hasPerformedComposition -->
+
+    <owl:ObjectProperty rdf:about="&Music;Music.owl#hasPerformedComposition">
+        <rdfs:comment xml:lang="en">perform</rdfs:comment>
+        <rdfs:range rdf:resource="&Music;Music.owl#Composition"/>
+        <rdfs:domain rdf:resource="&Music;Music.owl#Performance"/>
+        <owl:inverseOf rdf:resource="&Music;Music.owl#partOfPerformance"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#hasPerformingArtist -->
+
+    <owl:ObjectProperty rdf:about="&Music;Music.owl#hasPerformingArtist">
+        <rdfs:comment xml:lang="en">performed by</rdfs:comment>
+        <rdfs:range rdf:resource="&Music;Music.owl#Artist"/>
+        <rdfs:domain rdf:resource="&Music;Music.owl#Performance"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#hasPersonInstrumentation -->
+
+    <owl:ObjectProperty rdf:about="&Music;Music.owl#hasPersonInstrumentation">
+        <rdfs:label xml:lang="en">has part</rdfs:label>
+        <rdfs:domain rdf:resource="&Music;Music.owl#GroupInstrumentation"/>
+        <rdfs:range rdf:resource="&Music;Music.owl#PersonInstrumentation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#hasRehearsal -->
+
+    <owl:ObjectProperty rdf:about="&Music;Music.owl#hasRehearsal">
+        <rdfs:comment xml:lang="en">contains</rdfs:comment>
+        <rdfs:range rdf:resource="&Music;Music.owl#Rehearsal"/>
+        <rdfs:domain rdf:resource="&Music;Music.owl#RehearsalPhase"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#hasRehearsedComposition -->
+
+    <owl:ObjectProperty rdf:about="&Music;Music.owl#hasRehearsedComposition">
+        <rdfs:label xml:lang="en">rehearse</rdfs:label>
+        <rdfs:range rdf:resource="&Music;Music.owl#Composition"/>
+        <owl:inverseOf rdf:resource="&Music;Music.owl#partOfRehearsal"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&Music;Music.owl#Rehearsal"/>
+                    <rdf:Description rdf:about="&Music;Music.owl#RehearsalPhase"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#hasRehearsingArtist -->
+
+    <owl:ObjectProperty rdf:about="&Music;Music.owl#hasRehearsingArtist">
+        <rdfs:comment xml:lang="en">rehearsed by</rdfs:comment>
+        <rdfs:range rdf:resource="&Music;Music.owl#Artist"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&Music;Music.owl#Rehearsal"/>
+                    <rdf:Description rdf:about="&Music;Music.owl#RehearsalPhase"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#instrumentPlayedBy -->
+
+    <owl:ObjectProperty rdf:about="&Music;Music.owl#instrumentPlayedBy">
+        <rdfs:label xml:lang="en">played by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#instrumentationPlayedBy -->
+
+    <owl:ObjectProperty rdf:about="&Music;Music.owl#instrumentationPlayedBy">
+        <rdfs:label xml:lang="en">played by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#isComposerOf -->
+
+    <owl:ObjectProperty rdf:about="&Music;Music.owl#isComposerOf">
+        <rdfs:comment xml:lang="en">composed</rdfs:comment>
+        <rdfs:domain rdf:resource="&Music;Music.owl#Composer"/>
+        <rdfs:range rdf:resource="&Music;Music.owl#Composition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#isConductorOf -->
+
+    <owl:ObjectProperty rdf:about="&Music;Music.owl#isConductorOf">
+        <rdfs:comment xml:lang="en">conducted</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#isDebutPerformanceOf -->
+
+    <owl:ObjectProperty rdf:about="&Music;Music.owl#isDebutPerformanceOf">
+        <rdfs:label xml:lang="en">debut of</rdfs:label>
+        <rdfs:range rdf:resource="&Music;Music.owl#Composition"/>
+        <rdfs:domain rdf:resource="&Music;Music.owl#Performance"/>
+        <owl:inverseOf rdf:resource="&Music;Music.owl#hasDebutPerformance"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#isInstrumentationOf -->
+
+    <owl:ObjectProperty rdf:about="&Music;Music.owl#isInstrumentationOf">
+        <rdfs:label xml:lang="en">is part in</rdfs:label>
+        <owl:inverseOf rdf:resource="&Music;Music.owl#hasInstrumentation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#partOfConcert -->
+
+    <owl:ObjectProperty rdf:about="&Music;Music.owl#partOfConcert">
+        <rdfs:label xml:lang="en">part of</rdfs:label>
+        <rdfs:range rdf:resource="&mem;Concert"/>
+        <rdfs:domain rdf:resource="&Music;Music.owl#Performance"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#partOfGroupInstrumentation -->
+
+    <owl:ObjectProperty rdf:about="&Music;Music.owl#partOfGroupInstrumentation">
+        <rdfs:label xml:lang="en">is part in</rdfs:label>
+        <rdfs:range rdf:resource="&Music;Music.owl#GroupInstrumentation"/>
+        <rdfs:domain rdf:resource="&Music;Music.owl#PersonInstrumentation"/>
+        <owl:inverseOf rdf:resource="&Music;Music.owl#hasPersonInstrumentation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#partOfPerformance -->
+
+    <owl:ObjectProperty rdf:about="&Music;Music.owl#partOfPerformance">
+        <rdfs:label xml:lang="en">performed at</rdfs:label>
+        <rdfs:domain rdf:resource="&Music;Music.owl#Composition"/>
+        <rdfs:range rdf:resource="&Music;Music.owl#Performance"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#partOfRehearsal -->
+
+    <owl:ObjectProperty rdf:about="&Music;Music.owl#partOfRehearsal">
+        <rdfs:label xml:lang="en">rehearsed at</rdfs:label>
+        <rdfs:domain rdf:resource="&Music;Music.owl#Composition"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&Music;Music.owl#Rehearsal"/>
+                    <rdf:Description rdf:about="&Music;Music.owl#RehearsalPhase"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#partOfRehearsalPhase -->
+
+    <owl:ObjectProperty rdf:about="&Music;Music.owl#partOfRehearsalPhase">
+        <rdfs:label xml:lang="en">part of</rdfs:label>
+        <rdfs:domain rdf:resource="&Music;Music.owl#Rehearsal"/>
+        <rdfs:range rdf:resource="&Music;Music.owl#RehearsalPhase"/>
+        <owl:inverseOf rdf:resource="&Music;Music.owl#hasRehearsal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#playsComposition -->
+
+    <owl:ObjectProperty rdf:about="&Music;Music.owl#playsComposition">
+        <rdfs:label xml:lang="en">plays</rdfs:label>
+        <rdfs:domain rdf:resource="&Music;Music.owl#Artist"/>
+        <rdfs:range rdf:resource="&Music;Music.owl#Composition"/>
+        <owl:inverseOf rdf:resource="&Music;Music.owl#compositionPlayedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#playsInstrument -->
+
+    <owl:ObjectProperty rdf:about="&Music;Music.owl#playsInstrument">
+        <rdfs:label xml:lang="en">plays</rdfs:label>
+        <rdfs:domain rdf:resource="&Music;Music.owl#Artist"/>
+        <rdfs:range rdf:resource="&Music;Music.owl#Instrument"/>
+        <owl:inverseOf rdf:resource="&Music;Music.owl#instrumentPlayedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#playsInstrumentation -->
+
+    <owl:ObjectProperty rdf:about="&Music;Music.owl#playsInstrumentation">
+        <rdfs:label xml:lang="en">plays</rdfs:label>
+        <rdfs:domain rdf:resource="&Music;Music.owl#Artist"/>
+        <rdfs:range rdf:resource="&Music;Music.owl#Instrumentation"/>
+        <owl:inverseOf rdf:resource="&Music;Music.owl#instrumentationPlayedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/member -->
+
+    <owl:ObjectProperty rdf:about="&foaf;member">
+        <rdfs:label xml:lang="en">member</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/member_of -->
+
+    <owl:ObjectProperty rdf:about="&foaf;member_of">
+        <rdfs:label xml:lang="en">member of</rdfs:label>
+        <owl:inverseOf rdf:resource="&foaf;member"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Memories/2008/11/Memories.owl#Concert -->
+
+    <owl:Class rdf:about="&mem;Concert">
+        <rdfs:label xml:lang="en">Concert</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&mem;Event"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Music;Music.owl#hasPerformance"/>
+                <owl:someValuesFrom rdf:resource="&Music;Music.owl#Performance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#Artist -->
+
+    <owl:Class rdf:about="&Music;Music.owl#Artist">
+        <rdfs:label xml:lang="en">Artist</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&wgs84_pos;SpatialThing"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&foaf;Group"/>
+                    <rdf:Description rdf:about="&foaf;Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#Bassoon -->
+
+    <owl:Class rdf:about="&Music;Music.owl#Bassoon">
+        <rdfs:label xml:lang="en">Bassoon</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Music;Music.owl#Instrument"/>
+    </owl:Class>
+    
+
+
+    <!-- http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#Cello -->
+
+    <owl:Class rdf:about="&Music;Music.owl#Cello">
+        <rdfs:label xml:lang="en">Cello</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Music;Music.owl#Instrument"/>
+    </owl:Class>
+    
+
+
+    <!-- http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#Clarinet -->
+
+    <owl:Class rdf:about="&Music;Music.owl#Clarinet">
+        <rdfs:label xml:lang="en">Clarinet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Music;Music.owl#Instrument"/>
+    </owl:Class>
+    
+
+
+    <!-- http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#Composer -->
+
+    <owl:Class rdf:about="&Music;Music.owl#Composer">
+        <rdfs:label xml:lang="en">Composer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Music;Music.owl#Artist"/>
+        <rdfs:subClassOf rdf:resource="&foaf;Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Music;Music.owl#isComposerOf"/>
+                <owl:someValuesFrom rdf:resource="&Music;Music.owl#Composition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="&Music;Music.owl#Ensemble"/>
+    </owl:Class>
+    
+
+
+    <!-- http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#Composition -->
+
+    <owl:Class rdf:about="&Music;Music.owl#Composition">
+        <rdfs:label xml:lang="en">Composition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#Conductor -->
+
+    <owl:Class rdf:about="&Music;Music.owl#Conductor">
+        <rdfs:label xml:lang="en">Conductor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Music;Music.owl#Artist"/>
+        <rdfs:subClassOf rdf:resource="&foaf;Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Music;Music.owl#isConductorOf"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&Music;Music.owl#Artist"/>
+                            <rdf:Description rdf:about="&foaf;Group"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="&Music;Music.owl#Ensemble"/>
+    </owl:Class>
+    
+
+
+    <!-- http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#Ensemble -->
+
+    <owl:Class rdf:about="&Music;Music.owl#Ensemble">
+        <rdfs:label xml:lang="en">Ensemble</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Music;Music.owl#Artist"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&foaf;member"/>
+                <owl:onClass rdf:resource="&Music;Music.owl#Musician"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&foaf;member"/>
+                <owl:allValuesFrom rdf:resource="&Music;Music.owl#Artist"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="&Music;Music.owl#Musician"/>
+    </owl:Class>
+    
+
+
+    <!-- http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#Flute -->
+
+    <owl:Class rdf:about="&Music;Music.owl#Flute">
+        <rdfs:label xml:lang="en">Flute</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Music;Music.owl#Instrument"/>
+    </owl:Class>
+    
+
+
+    <!-- http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#GroupInstrumentation -->
+
+    <owl:Class rdf:about="&Music;Music.owl#GroupInstrumentation">
+        <rdfs:subClassOf rdf:resource="&Music;Music.owl#Instrumentation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#Guitar -->
+
+    <owl:Class rdf:about="&Music;Music.owl#Guitar">
+        <rdfs:label xml:lang="en">Guitar</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Music;Music.owl#Instrument"/>
+    </owl:Class>
+    
+
+
+    <!-- http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#Instrument -->
+
+    <owl:Class rdf:about="&Music;Music.owl#Instrument">
+        <rdfs:label xml:lang="en">Instrument</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#Instrumentation -->
+
+    <owl:Class rdf:about="&Music;Music.owl#Instrumentation">
+        <rdfs:label xml:lang="en">Instrumentation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#Musician -->
+
+    <owl:Class rdf:about="&Music;Music.owl#Musician">
+        <rdfs:label xml:lang="en">Musician</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Music;Music.owl#Artist"/>
+        <rdfs:subClassOf rdf:resource="&foaf;Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Music;Music.owl#playsInstrument"/>
+                <owl:someValuesFrom rdf:resource="&Music;Music.owl#Instrument"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#Oboe -->
+
+    <owl:Class rdf:about="&Music;Music.owl#Oboe">
+        <rdfs:label xml:lang="en">Oboe</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Music;Music.owl#Instrument"/>
+    </owl:Class>
+    
+
+
+    <!-- http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#Percussion -->
+
+    <owl:Class rdf:about="&Music;Music.owl#Percussion">
+        <rdfs:label xml:lang="en">Percussion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Music;Music.owl#Instrument"/>
+    </owl:Class>
+    
+
+
+    <!-- http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#Performance -->
+
+    <owl:Class rdf:about="&Music;Music.owl#Performance">
+        <rdfs:label xml:lang="en">Performance</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&mem;Event"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Music;Music.owl#hasPerformedComposition"/>
+                <owl:someValuesFrom rdf:resource="&Music;Music.owl#Composition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#PersonInstrumentation -->
+
+    <owl:Class rdf:about="&Music;Music.owl#PersonInstrumentation">
+        <rdfs:subClassOf rdf:resource="&Music;Music.owl#Instrumentation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#Recorder -->
+
+    <owl:Class rdf:about="&Music;Music.owl#Recorder">
+        <rdfs:label xml:lang="en">Recorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Music;Music.owl#Instrument"/>
+    </owl:Class>
+    
+
+
+    <!-- http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#Rehearsal -->
+
+    <owl:Class rdf:about="&Music;Music.owl#Rehearsal">
+        <rdfs:label xml:lang="en">Rehearsal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&mem;Event"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Music;Music.owl#hasRehearsedComposition"/>
+                <owl:someValuesFrom rdf:resource="&Music;Music.owl#Composition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#RehearsalPhase -->
+
+    <owl:Class rdf:about="&Music;Music.owl#RehearsalPhase">
+        <rdfs:label xml:lang="en">Rehearsal Phase</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&mem;Experience"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Music;Music.owl#hasRehearsal"/>
+                <owl:onClass rdf:resource="&Music;Music.owl#Rehearsal"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#Violin -->
+
+    <owl:Class rdf:about="&Music;Music.owl#Violin">
+        <rdfs:label xml:lang="en">Violin</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Music;Music.owl#Instrument"/>
+    </owl:Class>
+    
+
+
+    <!-- http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#Voice -->
+
+    <owl:Class rdf:about="&Music;Music.owl#Voice">
+        <rdfs:label xml:lang="en">Voice</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Music;Music.owl#Instrument"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.2.1789) http://owlapi.sourceforge.net -->
+

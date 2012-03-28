@@ -1,0 +1,1564 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:parrot="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:timeplace="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#"
+    xmlns:conf="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:history="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:interact="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#" > 
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-665684040">
+    <history:newObject xml:lang="en">Rehearsal 11</history:newObject>
+    <history:predicate>http://www.w3.org/2000/01/rdf-schema#label</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal11</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--388498968">
+    <history:newObject>file:data/greenwind.n3#MatthiasKaul</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#hasConversationPartner</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal10</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1351395150">
+    <history:newObject rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-11-06T23:00:00</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#endsAt</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal14</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#change-825073358">
+    <history:newObject>v6.0 2009-11-02T23:56:15</history:newObject>
+    <history:oldObject>v5.0 2009-11-01T23:58:29</history:oldObject>
+    <history:predicate>http://www.w3.org/2002/07/owl#versionInfo</history:predicate>
+    <history:subject>file:data/greenwind.n3</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Change"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1821708616">
+    <history:newObject>file:data/greenwind.n3#PaintingTheWindGreen</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#hasRehearsedComposition</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal8</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1283982802">
+    <history:newObject>file:data/greenwind.n3#EnsembleProgress</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#hasConversationPartner</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal14</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-2052469452">
+    <history:newObject xml:lang="en">Rehearsal 13</history:newObject>
+    <history:predicate>http://www.w3.org/2000/01/rdf-schema#label</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal13</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1428358319">
+    <history:newObject>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#Clarinet</history:newObject>
+    <history:predicate>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</history:predicate>
+    <history:subject>file:data/greenwind.n3#BClarinet1</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#change-1292205000">
+    <history:newObject>file:data/greenwind.n3#Tim</history:newObject>
+    <history:oldObject>file:data/greenwind.n3#Viktor</history:oldObject>
+    <history:predicate>http://xmlns.com/foaf/0.1/member</history:predicate>
+    <history:subject>file:data/greenwind.n3#EnsembleProgress</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Change"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1530365841">
+    <history:newObject>file:data/greenwind.n3#RehearsalPhaseForKW2009</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#partOfRehearsalPhase</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal11</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#removal--64189191">
+    <history:oldObject>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#Musician</history:oldObject>
+    <history:predicate>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</history:predicate>
+    <history:subject>file:data/greenwind.n3#Selma</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Removal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-954038223">
+    <history:newObject>file:data/greenwind.n3#EnsembleProgress</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#hasConversationPartner</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal6</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#removal-1562712671">
+    <history:oldObject xml:lang="en">Guitar</history:oldObject>
+    <history:predicate>http://www.w3.org/2000/01/rdf-schema#label</history:predicate>
+    <history:subject>file:data/greenwind.n3#BGuitar1</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Removal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1435576831">
+    <history:newObject>file:data/greenwind.n3#PaintingTheWindGreenDebut</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#hasTopic</history:predicate>
+    <history:subject>file:data/greenwind.n3#EvaluationOfPTWGPerformence</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--588739196">
+    <history:newObject>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#Performance</history:newObject>
+    <history:predicate>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</history:predicate>
+    <history:subject>file:data/greenwind.n3#PaintingTheWindGreenDebut</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-956702118">
+    <history:newObject rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-09-18T18:00:00</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#startsAt</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal4</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--692531332">
+    <history:newObject>file:data/greenwind.n3#PTWGInstrumentation</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#partOfGroupInstrumentation</history:predicate>
+    <history:subject>file:data/greenwind.n3#BPercussion2</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1173505065">
+    <history:newObject>file:data/greenwind.n3#PTWGInstrumentation</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#hasTopic</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal8</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1298516091">
+    <history:newObject rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-11-07T14:00:00</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#startsAt</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal15</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1699509616">
+    <history:newObject>file:data/greenwind.n3#RehearsalPhaseForKW2009</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#partOfRehearsalPhase</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal12</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-2019382438">
+    <history:newObject>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#Rehearsal</history:newObject>
+    <history:predicate>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal2</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#change-1104654245">
+    <history:newObject>v3.0 2009-10-02T23:53:23</history:newObject>
+    <history:oldObject>v2.0 2009-09-18T21:54:11</history:oldObject>
+    <history:predicate>http://www.w3.org/2002/07/owl#versionInfo</history:predicate>
+    <history:subject>file:data/greenwind.n3</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Change"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1201937177">
+    <history:newObject>file:data/greenwind.n3#PaintingTheWindGreen</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#hasTopic</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal2</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--111257057">
+    <history:newObject xml:lang="en">Clarinet</history:newObject>
+    <history:predicate>http://www.w3.org/2000/01/rdf-schema#label</history:predicate>
+    <history:subject>file:data/greenwind.n3#BClarinet1</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-274164824">
+    <history:newObject>file:data/greenwind.n3#Jan</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#instrumentationPlayedBy</history:predicate>
+    <history:subject>file:data/greenwind.n3#BRecorder1</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-920452994">
+    <history:newObject rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-10-16T18:00:00</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#startsAt</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal8</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#changeset--451841223">
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--588739196"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1090512665"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--229229323"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1549105138"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1924949036"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1878912842"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-771816418"/>
+    <history:toVersion rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#version-8.0"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1392235643"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1590428182"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1560929265"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1736130607"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1631547734"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1868653391"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1300585925"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-2037797166"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1298516091"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1509927941"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1505933078"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1324683836"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1606476555"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1351395150"/>
+    <history:hasChange rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#change-528519050"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1759571957"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-318164707"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1435576831"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--560692369"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1402674107"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--718592974"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1595370412"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--2146079070"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--2007273235"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1246693565"/>
+    <history:fromVersion rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#version-7.0"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1283982802"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-2052469452"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1162613170"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1656928130"/>
+    <history:hasChange rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#change-1240835634"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-457336631"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-389987949"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1928715732"/>
+    <history:hasChange rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#change--743872851"/>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#ChangeSet"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1500798445"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1869690976"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--2124221046"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-93727599"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1362718793"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1020598716"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-2128968297"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1745516859"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--2088026355"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1677328656">
+    <history:newObject>file:data/greenwind.n3#EnsembleProgress</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#hasConversationPartner</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal7</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#change-794861312">
+    <history:newObject>file:data/greenwind.n3#Viktor</history:newObject>
+    <history:oldObject>file:data/greenwind.n3#Tim</history:oldObject>
+    <history:predicate>http://xmlns.com/foaf/0.1/member</history:predicate>
+    <history:subject>file:data/greenwind.n3#EnsembleProgress</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Change"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1182854629">
+    <history:newObject rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-09-25T20:00:00</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#endsAt</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal5</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-2117131282">
+    <history:newObject rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-10-16T20:00:00</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#endsAt</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal8</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1560929265">
+    <history:newObject>file:data/greenwind.n3#Ursula</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#hasConversationPartner</history:predicate>
+    <history:subject>file:data/greenwind.n3#EvaluationOfPTWGPerformence</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#removal-1913848110">
+    <history:oldObject>Viktor</history:oldObject>
+    <history:predicate>http://www.w3.org/2000/01/rdf-schema#label</history:predicate>
+    <history:subject>file:data/greenwind.n3#Viktor</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Removal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1869690976">
+    <history:newObject rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-11-04T18:00:00</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#startsAt</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal13</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1462028384">
+    <history:newObject>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#Rehearsal</history:newObject>
+    <history:predicate>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal8</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1362718793">
+    <history:newObject rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-11-07T16:00:00</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#startsAt</history:predicate>
+    <history:subject>file:data/greenwind.n3#KW2009</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-490663363">
+    <history:newObject rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-10-02T18:00:00</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#startsAt</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal6</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1928715732">
+    <history:newObject>file:data/greenwind.n3#PaintingTheWindGreen</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#hasRehearsedComposition</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal13</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1117951114">
+    <history:newObject xml:lang="en">Rehearsal 5</history:newObject>
+    <history:predicate>http://www.w3.org/2000/01/rdf-schema#label</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal5</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-811985822">
+    <history:newObject>file:data/greenwind.n3#PaintingTheWindGreen</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#hasTopic</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal7</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#change-826689449">
+    <history:newObject xml:lang="en">Instrumentation: "Coloured Wind"</history:newObject>
+    <history:oldObject xml:lang="en">Instrumentation: "Something with Wind"</history:oldObject>
+    <history:predicate>http://www.w3.org/2000/01/rdf-schema#label</history:predicate>
+    <history:subject>file:data/greenwind.n3#PTWGInstrumentation</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Change"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1595370412">
+    <history:newObject rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-11-08T21:30:00</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#endsAt</history:predicate>
+    <history:subject>file:data/greenwind.n3#KW2009</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-123264961">
+    <history:newObject>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#Rehearsal</history:newObject>
+    <history:predicate>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal7</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1406676896">
+    <history:newObject>file:data/greenwind.n3#Clemens</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#instrumentationPlayedBy</history:predicate>
+    <history:subject>file:data/greenwind.n3#BPercussion2</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1494175489">
+    <history:newObject>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#Rehearsal</history:newObject>
+    <history:predicate>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal9</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-596841734">
+    <history:newObject>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#Rehearsal</history:newObject>
+    <history:predicate>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal11</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1736130607">
+    <history:newObject>file:data/greenwind.n3#MatthiasKaul</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#hasConversationPartner</history:predicate>
+    <history:subject>file:data/greenwind.n3#EvaluationOfPTWGPerformence</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1337130338">
+    <history:newObject rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-09-12T12:00:00</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#endsAt</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal3</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1598745653">
+    <history:newObject>file:data/greenwind.n3#Room156</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#locatedIn</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal10</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--585329200">
+    <history:newObject>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#Musician</history:newObject>
+    <history:predicate>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</history:predicate>
+    <history:subject>file:data/greenwind.n3#Mailina</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-679941610">
+    <history:newObject xml:lang="en">Rehearsal 4</history:newObject>
+    <history:predicate>http://www.w3.org/2000/01/rdf-schema#label</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal4</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1154966668">
+    <history:newObject>file:data/greenwind.n3#RehearsalPhaseForKW2009</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#partOfRehearsalPhase</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal7</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1036466211">
+    <history:newObject>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#Musician</history:newObject>
+    <history:predicate>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</history:predicate>
+    <history:subject>file:data/greenwind.n3#Tim</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1493254218">
+    <history:newObject>file:data/greenwind.n3#RehearsalPhaseForKW2009</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#partOfRehearsalPhase</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal9</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-93727599">
+    <history:newObject xml:lang="en">a conversation</history:newObject>
+    <history:predicate>http://www.w3.org/2000/01/rdf-schema#label</history:predicate>
+    <history:subject>file:data/greenwind.n3#EvaluationOfPTWGPerformence</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-647535343">
+    <history:newObject>file:data/greenwind.n3#RehearsalPhaseForKW2009</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#partOfRehearsalPhase</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal4</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--2097859507">
+    <history:newObject>file:data/greenwind.n3#PaintingTheWindGreen</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#hasRehearsedComposition</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal12</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--560692369">
+    <history:newObject>file:data/greenwind.n3#EnsembleProgress</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#hasConversationPartner</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal15</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1026454258">
+    <history:newObject>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#Percussion</history:newObject>
+    <history:predicate>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</history:predicate>
+    <history:subject>file:data/greenwind.n3#BPercussion2</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1606476555">
+    <history:newObject>file:data/greenwind.n3#Room174</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#locatedIn</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal14</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1090512665">
+    <history:newObject>file:data/greenwind.n3#PaintingTheWindGreen</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#isDebutPerformanceOf</history:predicate>
+    <history:subject>file:data/greenwind.n3#PaintingTheWindGreenDebut</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1555960618">
+    <history:newObject xml:lang="en">Rehearsal 6</history:newObject>
+    <history:predicate>http://www.w3.org/2000/01/rdf-schema#label</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal6</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#change-46701193">
+    <history:newObject>v7.0 2009-11-07T07:13:32</history:newObject>
+    <history:oldObject>v6.0 2009-11-02T23:56:15</history:oldObject>
+    <history:predicate>http://www.w3.org/2002/07/owl#versionInfo</history:predicate>
+    <history:subject>file:data/greenwind.n3</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Change"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#version-7.0">
+    <history:upGradeWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#changeset--451841223"/>
+    <history:nextVersion rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#version-8.0"/>
+    <history:downGradeWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#changeset--571962057"/>
+    <history:priorVersion rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#version-6.0"/>
+    <history:ontologyIRI>file:data/greenwind.n3</history:ontologyIRI>
+    <owl:versionInfo>v7.0 2009-11-07T07:13:32</owl:versionInfo>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Version"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1862987670">
+    <history:newObject xml:lang="en">Rehearsal 8</history:newObject>
+    <history:predicate>http://www.w3.org/2000/01/rdf-schema#label</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal8</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#change-1981534595">
+    <history:newObject>v5.0 2009-11-01T23:58:29</history:newObject>
+    <history:oldObject>v4.0 2009-10-16T22:43:42</history:oldObject>
+    <history:predicate>http://www.w3.org/2002/07/owl#versionInfo</history:predicate>
+    <history:subject>file:data/greenwind.n3</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Change"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1483421066">
+    <history:newObject>file:data/greenwind.n3#PaintingTheWindGreen</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#hasRehearsedComposition</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal6</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-733995551">
+    <history:newObject>file:data/greenwind.n3#PaintingTheWindGreen</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#hasTopic</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal8</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1392235643">
+    <history:newObject rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-11-06T18:15:00</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#startsAt</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal14</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--196077398">
+    <history:newObject xml:lang="en">Rehearsal 2</history:newObject>
+    <history:predicate>http://www.w3.org/2000/01/rdf-schema#label</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal2</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1558654649">
+    <history:newObject>file:data/greenwind.n3#PaintingTheWindGreen</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#hasTopic</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal11</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#removal-1104128504">
+    <history:oldObject>Tim</history:oldObject>
+    <history:predicate>http://www.w3.org/2000/01/rdf-schema#label</history:predicate>
+    <history:subject>file:data/greenwind.n3#Tim</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Removal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-771816418">
+    <history:newObject xml:lang="en">Festival Klangwerkstatt 2009</history:newObject>
+    <history:predicate>http://www.w3.org/2000/01/rdf-schema#label</history:predicate>
+    <history:subject>file:data/greenwind.n3#KW2009</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--27708666">
+    <history:newObject xml:lang="en">Rehearsal 10</history:newObject>
+    <history:predicate>http://www.w3.org/2000/01/rdf-schema#label</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal10</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1171057774">
+    <history:newObject>file:data/greenwind.n3#EnsembleProgress</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#hasConversationPartner</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal9</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#change-303215063">
+    <history:newObject>file:data/greenwind.n3#Tim</history:newObject>
+    <history:oldObject>file:data/greenwind.n3#Viktor</history:oldObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#instrumentationPlayedBy</history:predicate>
+    <history:subject>file:data/greenwind.n3#BBassoon1</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Change"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1361222066">
+    <history:newObject>file:data/greenwind.n3#RehearsalPhaseForKW2009</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#partOfRehearsalPhase</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal10</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-2038059821">
+    <history:newObject rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-10-09T20:00:00</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#endsAt</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal7</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1878912842">
+    <history:newObject>file:data/greenwind.n3#Room174</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#locatedIn</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal13</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1864259716">
+    <history:newObject>http://www.w3.org/2002/07/owl#NamedIndividual</history:newObject>
+    <history:predicate>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</history:predicate>
+    <history:subject>file:data/greenwind.n3#MusicalSchool</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1359076746">
+    <history:newObject xml:lang="en">Rehearsal 12</history:newObject>
+    <history:predicate>http://www.w3.org/2000/01/rdf-schema#label</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal12</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1020598716">
+    <history:newObject>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#Rehearsal</history:newObject>
+    <history:predicate>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal13</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1480664378">
+    <history:newObject>file:data/greenwind.n3#PaintingTheWindGreen</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#hasTopic</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal12</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--2088026355">
+    <history:newObject>file:data/greenwind.n3#RehearsalPhaseForKW2009</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#partOfRehearsalPhase</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal15</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-241932106">
+    <history:newObject xml:lang="en">Rehearsal 3</history:newObject>
+    <history:predicate>http://www.w3.org/2000/01/rdf-schema#label</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal3</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-26525009">
+    <history:newObject>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#Recorder</history:newObject>
+    <history:predicate>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</history:predicate>
+    <history:subject>file:data/greenwind.n3#BRecorder1</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1261926090">
+    <history:newObject rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-09-18T20:00:00</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#endsAt</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal4</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1330529338">
+    <history:newObject rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-10-31T10:00:00</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#startsAt</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal10</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1876295580">
+    <history:newObject rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-10-30T21:00:00</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#endsAt</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal9</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-889976093">
+    <history:newObject>file:data/greenwind.n3#PaintingTheWindGreen</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#hasTopic</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal6</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--618345806">
+    <history:newObject rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-11-02T21:00:00</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#endsAt</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal12</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-457336631">
+    <history:newObject>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#Conversation</history:newObject>
+    <history:predicate>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</history:predicate>
+    <history:subject>file:data/greenwind.n3#EvaluationOfPTWGPerformence</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1438575596">
+    <history:newObject>file:data/greenwind.n3#Room156</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#locatedIn</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal2</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#removal--1968735841">
+    <history:oldObject>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#Musician</history:oldObject>
+    <history:predicate>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</history:predicate>
+    <history:subject>file:data/greenwind.n3#Johannes</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Removal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--2007273235">
+    <history:newObject>file:data/greenwind.n3#EnsembleProgress</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#hasConversationPartner</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal13</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#change--2105067763">
+    <history:newObject>file:data/greenwind.n3#Mailina</history:newObject>
+    <history:oldObject>file:data/greenwind.n3#Selma</history:oldObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#instrumentationPlayedBy</history:predicate>
+    <history:subject>file:data/greenwind.n3#BCello1</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Change"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-656005280">
+    <history:newObject>file:data/greenwind.n3#PaintingTheWindGreen</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#hasTopic</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal9</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-309247793">
+    <history:newObject>file:data/greenwind.n3#RehearsalPhaseForKW2009</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#partOfRehearsalPhase</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal2</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#version-4.0">
+    <history:upGradeWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#changeset--812203725"/>
+    <history:nextVersion rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#version-5.0"/>
+    <history:downGradeWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#changeset--932324559"/>
+    <history:priorVersion rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#version-3.0"/>
+    <history:ontologyIRI>file:data/greenwind.n3</history:ontologyIRI>
+    <owl:versionInfo>v4.0 2009-10-16T22:43:42</owl:versionInfo>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Version"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1759284415">
+    <history:newObject>file:data/greenwind.n3#Sophie</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#instrumentationPlayedBy</history:predicate>
+    <history:subject>file:data/greenwind.n3#BClarinet1</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-985822893">
+    <history:newObject>file:data/greenwind.n3#RehearsalPhaseForKW2009</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#partOfRehearsalPhase</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal6</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--2146079070">
+    <history:newObject>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Memories/2008/11/Memories.owl#Concert</history:newObject>
+    <history:predicate>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</history:predicate>
+    <history:subject>file:data/greenwind.n3#KW2009</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#change-528519050">
+    <history:newObject xml:lang="en">Room 170: Small Concert Room</history:newObject>
+    <history:oldObject xml:lang="en">Room 174: Sound Studio</history:oldObject>
+    <history:predicate>http://www.w3.org/2000/01/rdf-schema#label</history:predicate>
+    <history:subject>file:data/greenwind.n3#Room174</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Change"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1939123509">
+    <history:newObject>file:data/greenwind.n3#EnsembleProgress</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#hasConversationPartner</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal2</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#removal-824480648">
+    <history:oldObject>Johannes</history:oldObject>
+    <history:predicate>http://www.w3.org/2000/01/rdf-schema#label</history:predicate>
+    <history:subject>file:data/greenwind.n3#Johannes</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Removal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--741921689">
+    <history:newObject>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#Rehearsal</history:newObject>
+    <history:predicate>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal10</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#removal-1741686254">
+    <history:oldObject>file:data/greenwind.n3#PTWGInstrumentation</history:oldObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#partOfGroupInstrumentation</history:predicate>
+    <history:subject>file:data/greenwind.n3#BGuitar1</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Removal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1894348207">
+    <history:newObject>file:data/greenwind.n3#EnsembleProgress</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#hasConversationPartner</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal8</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-230747790">
+    <history:newObject>file:data/greenwind.n3#EnsembleProgress</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#hasConversationPartner</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal5</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#change-1240835634">
+    <history:newObject xml:lang="en">Studio 1</history:newObject>
+    <history:oldObject xml:lang="en">Room 195</history:oldObject>
+    <history:predicate>http://www.w3.org/2000/01/rdf-schema#label</history:predicate>
+    <history:subject>file:data/greenwind.n3#Studio1</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Change"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-841113195">
+    <history:newObject>file:data/greenwind.n3#EnsembleProgress</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#hasConversationPartner</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal11</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#change--194128625">
+    <history:newObject>file:data/greenwind.n3#Viktor</history:newObject>
+    <history:oldObject>file:data/greenwind.n3#Tim</history:oldObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#instrumentationPlayedBy</history:predicate>
+    <history:subject>file:data/greenwind.n3#BBassoon1</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Change"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-2127172051">
+    <history:newObject rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-10-02T20:00:00</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#endsAt</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal6</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1835671131">
+    <history:newObject rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-09-11T20:00:00</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#endsAt</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal2</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-967966364">
+    <history:newObject>file:data/greenwind.n3#PaintingTheWindGreen</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#hasTopic</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal5</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-806845966">
+    <history:newObject>file:data/greenwind.n3#PaintingTheWindGreen</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#hasRehearsedComposition</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal2</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1990852391">
+    <history:newObject>file:data/greenwind.n3#PaintingTheWindGreen</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#hasRehearsedComposition</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal9</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#changeset--571962057">
+    <history:hasRemoval rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#removal--1864259716"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1107640175"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--618345806"/>
+    <history:hasChange rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#change--1919613645"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1480664378"/>
+    <history:fromVersion rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#version-6.0"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--2097859507"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1699509616"/>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#ChangeSet"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1564403628"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1359076746"/>
+    <history:hasChange rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#change-1421317455"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1935605157"/>
+    <history:hasChange rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#change-46701193"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1720310941"/>
+    <history:toVersion rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#version-7.0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#version-8.0">
+    <history:downGradeWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#changeset--451841223"/>
+    <history:priorVersion rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#version-7.0"/>
+    <history:ontologyIRI>file:data/greenwind.n3</history:ontologyIRI>
+    <owl:versionInfo>v8.0 2009-11-07T18:35:17</owl:versionInfo>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Version"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-348830508">
+    <history:newObject>file:data/greenwind.n3#Room174</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#locatedIn</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal6</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#removal-1522252823">
+    <history:oldObject>file:data/greenwind.n3#Johannes</history:oldObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#instrumentationPlayedBy</history:predicate>
+    <history:subject>file:data/greenwind.n3#BGuitar1</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Removal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1123946906">
+    <history:newObject>file:data/greenwind.n3#PaintingTheWindGreen</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#hasTopic</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal3</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--2124221046">
+    <history:newObject>file:data/greenwind.n3#EvaluationOfPerformance</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#hasTopic</history:predicate>
+    <history:subject>file:data/greenwind.n3#EvaluationOfPTWGPerformence</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1246693565">
+    <history:newObject>file:data/greenwind.n3#PaintingTheWindGreen</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#hasTopic</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal15</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#change--1919613645">
+    <history:newObject xml:lang="en">Composition: "Painting The Wind Green"</history:newObject>
+    <history:oldObject xml:lang="en">Composition: "Coloured Wind"</history:oldObject>
+    <history:predicate>http://www.w3.org/2000/01/rdf-schema#label</history:predicate>
+    <history:subject>file:data/greenwind.n3#PaintingTheWindGreen</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Change"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1145133516">
+    <history:newObject>file:data/greenwind.n3#PaintingTheWindGreen</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#hasRehearsedComposition</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal4</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1045956635">
+    <history:newObject>file:data/greenwind.n3#PaintingTheWindGreen</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#hasTopic</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal4</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1935605157">
+    <history:newObject>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#Rehearsal</history:newObject>
+    <history:predicate>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal12</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1509927941">
+    <history:newObject>file:data/greenwind.n3#Sylvia</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#hasConversationPartner</history:predicate>
+    <history:subject>file:data/greenwind.n3#EvaluationOfPTWGPerformence</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1166139309">
+    <history:newObject>file:data/greenwind.n3#Room156</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#locatedIn</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal3</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--718592974">
+    <history:newObject rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-11-07T17:30:00</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#startsAt</history:predicate>
+    <history:subject>file:data/greenwind.n3#PaintingTheWindGreenDebut</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-975989741">
+    <history:newObject>file:data/greenwind.n3#PaintingTheWindGreen</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#hasRehearsedComposition</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal3</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1720310941">
+    <history:newObject rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-11-02T17:30:00</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#startsAt</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal12</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1162613170">
+    <history:newObject rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-11-04T22:00:00</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#endsAt</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal13</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1858820239">
+    <history:newObject>file:data/greenwind.n3#PaintingTheWindGreen</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#hasRehearsedComposition</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal10</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-117822762">
+    <history:newObject>file:data/greenwind.n3#EnsembleProgress</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#hasConversationPartner</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal10</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#removal-1762068210">
+    <history:oldObject>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#Musician</history:oldObject>
+    <history:predicate>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</history:predicate>
+    <history:subject>file:data/greenwind.n3#Viktor</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Removal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--891794869">
+    <history:newObject rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-09-25T18:00:00</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#startsAt</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal5</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1913848110">
+    <history:newObject>Viktor</history:newObject>
+    <history:predicate>http://www.w3.org/2000/01/rdf-schema#label</history:predicate>
+    <history:subject>file:data/greenwind.n3#Viktor</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-478391568">
+    <history:newObject>file:data/greenwind.n3#RehearsalPhaseForKW2009</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#partOfRehearsalPhase</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal3</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--936821435">
+    <history:newObject>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#Rehearsal</history:newObject>
+    <history:predicate>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal3</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1656928130">
+    <history:newObject>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#Rehearsal</history:newObject>
+    <history:predicate>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal15</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1104128504">
+    <history:newObject>Tim</history:newObject>
+    <history:predicate>http://www.w3.org/2000/01/rdf-schema#label</history:predicate>
+    <history:subject>file:data/greenwind.n3#Tim</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-400344482">
+    <history:newObject>file:data/greenwind.n3#PTWGInstrumentation</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#partOfGroupInstrumentation</history:predicate>
+    <history:subject>file:data/greenwind.n3#BRecorder1</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-401941988">
+    <history:newObject>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#Rehearsal</history:newObject>
+    <history:predicate>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal4</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1424978166">
+    <history:newObject xml:lang="en">Rehearsal 9</history:newObject>
+    <history:predicate>http://www.w3.org/2000/01/rdf-schema#label</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal9</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1590428182">
+    <history:newObject>file:data/greenwind.n3#PaintingTheWindGreen</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#hasRehearsedComposition</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal15</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#change--864185075">
+    <history:newObject xml:lang="en">Composition: "Coloured Wind"</history:newObject>
+    <history:oldObject xml:lang="en">Composition: "Something with Wind"</history:oldObject>
+    <history:predicate>http://www.w3.org/2000/01/rdf-schema#label</history:predicate>
+    <history:subject>file:data/greenwind.n3#PaintingTheWindGreen</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Change"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-76394221">
+    <history:newObject>file:data/greenwind.n3#Room174</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#locatedIn</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal7</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-389987949">
+    <history:newObject>file:data/greenwind.n3#KW2009</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#during</history:predicate>
+    <history:subject>file:data/greenwind.n3#PaintingTheWindGreenDebut</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#change-471790522">
+    <history:newObject>file:data/greenwind.n3#Mailina</history:newObject>
+    <history:oldObject>file:data/greenwind.n3#Selma</history:oldObject>
+    <history:predicate>http://xmlns.com/foaf/0.1/member</history:predicate>
+    <history:subject>file:data/greenwind.n3#EnsembleProgress</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Change"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--28192861">
+    <history:newObject rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-09-12T10:00:00</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#startsAt</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal3</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1215498462">
+    <history:newObject>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#Rehearsal</history:newObject>
+    <history:predicate>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal6</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1924949036">
+    <history:newObject>file:data/greenwind.n3#Studio1</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#locatedIn</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal15</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1868653391">
+    <history:newObject>file:data/greenwind.n3#RehearsalPhaseForKW2009</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#partOfRehearsalPhase</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal13</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--468478353">
+    <history:newObject>file:data/greenwind.n3#Room174</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#locatedIn</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal9</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1324683836">
+    <history:newObject>file:data/greenwind.n3#PaintingTheWindGreen</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#hasTopic</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal14</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#change--334166411">
+    <history:newObject>file:data/greenwind.n3#Tim</history:newObject>
+    <history:oldObject>file:data/greenwind.n3#Johannes</history:oldObject>
+    <history:predicate>http://xmlns.com/foaf/0.1/member</history:predicate>
+    <history:subject>file:data/greenwind.n3#EnsembleProgress</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Change"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--229229323">
+    <history:newObject rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-11-07T15:00:00</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#endsAt</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal15</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1990076296">
+    <history:newObject rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-10-31T15:00:00</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#endsAt</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal10</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#change--743872851">
+    <history:newObject>v8.0 2009-11-07T18:35:17</history:newObject>
+    <history:oldObject>v7.0 2009-11-07T07:13:32</history:oldObject>
+    <history:predicate>http://www.w3.org/2002/07/owl#versionInfo</history:predicate>
+    <history:subject>file:data/greenwind.n3</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Change"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#removal-1036466211">
+    <history:oldObject>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#Musician</history:oldObject>
+    <history:predicate>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</history:predicate>
+    <history:subject>file:data/greenwind.n3#Tim</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Removal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1871181940">
+    <history:newObject>file:data/greenwind.n3#Room156</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#locatedIn</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal11</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1636644920">
+    <history:newObject>file:data/greenwind.n3#PaintingTheWindGreen</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#hasTopic</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal10</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1740705411">
+    <history:newObject>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#Rehearsal</history:newObject>
+    <history:predicate>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal5</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1402674107">
+    <history:newObject>file:data/greenwind.n3#PaintingTheWindGreen</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#hasTopic</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal13</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#change--1405310638">
+    <history:newObject>v2.0 2009-09-18T21:54:11</history:newObject>
+    <history:oldObject>v1.0 2009-09-11T23:21:16</history:oldObject>
+    <history:predicate>http://www.w3.org/2002/07/owl#versionInfo</history:predicate>
+    <history:subject>file:data/greenwind.n3</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Change"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1564403628">
+    <history:newObject>file:data/greenwind.n3#EnsembleProgress</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#hasConversationPartner</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal12</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-387275660">
+    <history:newObject rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-10-30T16:30:00</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#startsAt</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal9</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1631547734">
+    <history:newObject xml:lang="en">Debut Performance</history:newObject>
+    <history:predicate>http://www.w3.org/2000/01/rdf-schema#label</history:predicate>
+    <history:subject>file:data/greenwind.n3#PaintingTheWindGreenDebut</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--492542643">
+    <history:newObject>file:data/greenwind.n3#EnsembleProgress</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#hasConversationPartner</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal4</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1300585925">
+    <history:newObject>file:data/greenwind.n3#Studio1</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#locatedIn</history:predicate>
+    <history:subject>file:data/greenwind.n3#PaintingTheWindGreenDebut</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--322338704">
+    <history:newObject xml:lang="en">Recorder 1</history:newObject>
+    <history:predicate>http://www.w3.org/2000/01/rdf-schema#label</history:predicate>
+    <history:subject>file:data/greenwind.n3#BRecorder1</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-2037797166">
+    <history:newObject>file:data/greenwind.n3#RehearsalPhaseForKW2009</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#partOfRehearsalPhase</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal14</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#changeset--812203725">
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-733995551"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1677328656"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-2117131282"/>
+    <history:hasChange rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#change-794861312"/>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#ChangeSet"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1762068210"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1993970122"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-2038059821"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1173505065"/>
+    <history:toVersion rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#version-5.0"/>
+    <history:hasChange rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#change--194128625"/>
+    <history:hasRemoval rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#removal-1104128504"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1462028384"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1894348207"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1652564841"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1526017315"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1154966668"/>
+    <history:fromVersion rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#version-4.0"/>
+    <history:hasRemoval rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#removal-1036466211"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-920452994"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--196042070"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-76394221"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-811985822"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1324110443"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-123264961"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1913848110"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1821708616"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1862987670"/>
+    <history:hasChange rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#change-1981534595"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1500798445">
+    <history:newObject>file:data/greenwind.n3#Sophie</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#hasConversationPartner</history:predicate>
+    <history:subject>file:data/greenwind.n3#EvaluationOfPTWGPerformence</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1526017315">
+    <history:newObject rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-10-09T18:00:00</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#startsAt</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal7</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1759571957">
+    <history:newObject>file:data/greenwind.n3#PaintingTheWindGreen</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#hasRehearsedComposition</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal14</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#change-1421317455">
+    <history:newObject xml:lang="en">Instrumentation: "Painting The Wind Green"</history:newObject>
+    <history:oldObject xml:lang="en">Instrumentation: "Coloured Wind"</history:oldObject>
+    <history:predicate>http://www.w3.org/2000/01/rdf-schema#label</history:predicate>
+    <history:subject>file:data/greenwind.n3#PTWGInstrumentation</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Change"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1914469074">
+    <history:newObject>file:data/greenwind.n3#PTWGInstrumentation</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#partOfGroupInstrumentation</history:predicate>
+    <history:subject>file:data/greenwind.n3#BClarinet1</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-2027964014">
+    <history:newObject>file:data/greenwind.n3#PaintingTheWindGreen</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#hasRehearsedComposition</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal11</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-893703022">
+    <history:newObject>file:data/greenwind.n3#Room156</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#locatedIn</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal4</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1798603672">
+    <history:newObject>Mailina</history:newObject>
+    <history:predicate>http://www.w3.org/2000/01/rdf-schema#label</history:predicate>
+    <history:subject>file:data/greenwind.n3#Mailina</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#version-3.0">
+    <history:upGradeWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#changeset--932324559"/>
+    <history:nextVersion rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#version-4.0"/>
+    <history:downGradeWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#changeset--1052445393"/>
+    <history:priorVersion rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#version-2.0"/>
+    <history:ontologyIRI>file:data/greenwind.n3</history:ontologyIRI>
+    <owl:versionInfo>v3.0 2009-10-02T23:53:23</owl:versionInfo>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Version"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-318164707">
+    <history:newObject>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#Rehearsal</history:newObject>
+    <history:predicate>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal14</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--680498357">
+    <history:newObject rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-09-11T18:00:00</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#startsAt</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal2</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#version-5.0">
+    <history:upGradeWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#changeset--692082891"/>
+    <history:nextVersion rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#version-6.0"/>
+    <history:downGradeWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#changeset--812203725"/>
+    <history:priorVersion rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#version-4.0"/>
+    <history:ontologyIRI>file:data/greenwind.n3</history:ontologyIRI>
+    <owl:versionInfo>v5.0 2009-11-01T23:58:29</owl:versionInfo>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Version"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1324110443">
+    <history:newObject>file:data/greenwind.n3#RehearsalPhaseForKW2009</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#partOfRehearsalPhase</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal8</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#changeset--1172566227">
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1914469074"/>
+    <history:fromVersion rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#version-1.0"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-274164824"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--196077398"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1835671131"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--111257057"/>
+    <history:hasChange rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#change--864185075"/>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#ChangeSet"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-400344482"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--322338704"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1939123509"/>
+    <history:hasChange rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#change-826689449"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-26525009"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1759284415"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--680498357"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-806845966"/>
+    <history:toVersion rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#version-2.0"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1428358319"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1201937177"/>
+    <history:hasChange rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#change--1405310638"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-2019382438"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-622293001"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1438575596"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-309247793"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1652564841">
+    <history:newObject>file:data/greenwind.n3#PaintingTheWindGreen</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#hasRehearsedComposition</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal7</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#version-2.0">
+    <history:upGradeWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#changeset--1052445393"/>
+    <history:nextVersion rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#version-3.0"/>
+    <history:downGradeWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#changeset--1172566227"/>
+    <history:priorVersion rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#version-1.0"/>
+    <history:ontologyIRI>file:data/greenwind.n3</history:ontologyIRI>
+    <owl:versionInfo>v2.0 2009-09-18T21:54:11</owl:versionInfo>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Version"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-2128968297">
+    <history:newObject rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-11-07T18:00:00</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#endsAt</history:predicate>
+    <history:subject>file:data/greenwind.n3#PaintingTheWindGreenDebut</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1491926969">
+    <history:newObject rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-11-01T10:00:00</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#startsAt</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal11</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1314277291">
+    <history:newObject>file:data/greenwind.n3#PaintingTheWindGreen</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#hasRehearsedComposition</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal5</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1549105138">
+    <history:newObject xml:lang="en">Rehearsal 14</history:newObject>
+    <history:predicate>http://www.w3.org/2000/01/rdf-schema#label</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal14</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#change-497940846">
+    <history:newObject>file:data/greenwind.n3#Clemens</history:newObject>
+    <history:oldObject>file:data/greenwind.n3#Selma</history:oldObject>
+    <history:predicate>http://xmlns.com/foaf/0.1/member</history:predicate>
+    <history:subject>file:data/greenwind.n3#EnsembleProgress</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Change"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#changeset--932324559">
+    <history:hasChange rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#change-471790522"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1314277291"/>
+    <history:hasChange rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#change--2105067763"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1483421066"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--692531332"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1215498462"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--963218478"/>
+    <history:hasChange rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#change-497940846"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1117951114"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--891794869"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1798603672"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1555960618"/>
+    <history:hasRemoval rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#removal--64189191"/>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#ChangeSet"/>
+    <history:toVersion rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#version-4.0"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-348830508"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-954038223"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1406676896"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-985822893"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-2127172051"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1026454258"/>
+    <history:hasChange rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#change-1353244350"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-889976093"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--585329200"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-621266735"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-490663363"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-967966364"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1182854629"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-816679118"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-230747790"/>
+    <history:fromVersion rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#version-3.0"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1740705411"/>
+    <history:hasRemoval rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#removal-1730940472"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1745516859">
+    <history:newObject>file:data/greenwind.n3#Tim</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#hasConversationPartner</history:predicate>
+    <history:subject>file:data/greenwind.n3#EvaluationOfPTWGPerformence</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#version-1.0">
+    <history:upGradeWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#changeset--1172566227"/>
+    <history:nextVersion rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#version-2.0"/>
+    <history:ontologyIRI>file:data/greenwind.n3</history:ontologyIRI>
+    <owl:versionInfo>v1.0 2009-09-11T23:21:16</owl:versionInfo>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Version"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#removal--1864259716">
+    <history:oldObject>http://www.w3.org/2002/07/owl#NamedIndividual</history:oldObject>
+    <history:predicate>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</history:predicate>
+    <history:subject>file:data/greenwind.n3#MusicalSchool</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Removal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1215833076">
+    <history:newObject>file:data/greenwind.n3#EnsembleProgress</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#hasConversationPartner</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal3</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#removal--182112495">
+    <history:oldObject>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#Guitar</history:oldObject>
+    <history:predicate>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</history:predicate>
+    <history:subject>file:data/greenwind.n3#BGuitar1</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Removal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-621266735">
+    <history:newObject>file:data/greenwind.n3#Room156</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#locatedIn</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal5</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-816679118">
+    <history:newObject>file:data/greenwind.n3#RehearsalPhaseForKW2009</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#partOfRehearsalPhase</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal5</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1993970122">
+    <history:newObject xml:lang="en">Rehearsal 7</history:newObject>
+    <history:predicate>http://www.w3.org/2000/01/rdf-schema#label</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal7</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1107640175">
+    <history:newObject>file:data/greenwind.n3#Studio1</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#locatedIn</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal12</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-577063849">
+    <history:newObject>file:data/greenwind.n3#MatthiasKaul</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#hasConversationPartner</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal11</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#changeset--1052445393">
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-956702118"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-893703022"/>
+    <history:hasChange rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#change-1104654245"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1045956635"/>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#ChangeSet"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-241932106"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-679941610"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1261926090"/>
+    <history:toVersion rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#version-3.0"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1215833076"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-647535343"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--936821435"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-401941988"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--492542643"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-352284333"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-975989741"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1337130338"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1166139309"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--28192861"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1145133516"/>
+    <history:fromVersion rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#version-2.0"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-478391568"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1123946906"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1505933078">
+    <history:newObject xml:lang="en">Final Rehearsal</history:newObject>
+    <history:predicate>http://www.w3.org/2000/01/rdf-schema#label</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal15</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--196042070">
+    <history:newObject>file:data/greenwind.n3#Room170</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#locatedIn</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal8</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#removal-1730940472">
+    <history:oldObject>Selma</history:oldObject>
+    <history:predicate>http://www.w3.org/2000/01/rdf-schema#label</history:predicate>
+    <history:subject>file:data/greenwind.n3#Selma</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Removal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-352284333">
+    <history:newObject>file:data/greenwind.n3#PTWGInstrumentation</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#hasTopic</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal4</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#changeset--692082891">
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1858820239"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1494175489"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1491926969"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1036466211"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1424978166"/>
+    <history:hasRemoval rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#removal-1913848110"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--468478353"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-596841734"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1871181940"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1361222066"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-656005280"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1598745653"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1558654649"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1990852391"/>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#ChangeSet"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-577063849"/>
+    <history:hasRemoval rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#removal-1741686254"/>
+    <history:hasRemoval rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#removal--182112495"/>
+    <history:hasRemoval rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#removal-1762068210"/>
+    <history:hasChange rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#change-825073358"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-841113195"/>
+    <history:hasChange rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#change--334166411"/>
+    <history:hasRemoval rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#removal-1562712671"/>
+    <history:hasRemoval rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#removal-824480648"/>
+    <history:hasRemoval rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#removal-1522252823"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1990076296"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--388498968"/>
+    <history:hasChange rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#change-1292205000"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1171057774"/>
+    <history:fromVersion rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#version-5.0"/>
+    <history:toVersion rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#version-6.0"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1636644920"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1493254218"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-98889783"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1330529338"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-2027964014"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-665684040"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-117822762"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1876295580"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--741921689"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--1864259716"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--27708666"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-387275660"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1530365841"/>
+    <history:hasRemoval rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#removal--1968735841"/>
+    <history:hasChange rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#change-303215063"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1104128504"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--963218478">
+    <history:newObject xml:lang="en">Percussion 2</history:newObject>
+    <history:predicate>http://www.w3.org/2000/01/rdf-schema#label</history:predicate>
+    <history:subject>file:data/greenwind.n3#BPercussion2</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1762068210">
+    <history:newObject>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#Musician</history:newObject>
+    <history:predicate>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</history:predicate>
+    <history:subject>file:data/greenwind.n3#Viktor</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#change-1353244350">
+    <history:newObject>v4.0 2009-10-16T22:43:42</history:newObject>
+    <history:oldObject>v3.0 2009-10-02T23:53:23</history:oldObject>
+    <history:predicate>http://www.w3.org/2002/07/owl#versionInfo</history:predicate>
+    <history:subject>file:data/greenwind.n3</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Change"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#version-6.0">
+    <history:upGradeWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#changeset--571962057"/>
+    <history:nextVersion rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#version-7.0"/>
+    <history:downGradeWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#changeset--692082891"/>
+    <history:priorVersion rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#version-5.0"/>
+    <history:ontologyIRI>file:data/greenwind.n3</history:ontologyIRI>
+    <owl:versionInfo>v6.0 2009-11-02T23:56:15</owl:versionInfo>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Version"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-622293001">
+    <history:newObject>file:data/greenwind.n3#MatthiasKaul</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#hasConversationPartner</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal2</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-98889783">
+    <history:newObject rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-11-01T15:00:00</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#endsAt</history:predicate>
+    <history:subject>file:data/greenwind.n3#Rehearsal11</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+</rdf:RDF>

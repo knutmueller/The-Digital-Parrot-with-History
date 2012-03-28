@@ -1,0 +1,45 @@
+<rdf:RDF xmlns="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:conf="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:interact="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#"
+  xmlns:facts="file:data/facts.rdf#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:parrot="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:timeplace="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#"
+  xmlns:mem="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Memories/2008/11/Memories.owl#">
+
+  <owl:Ontology rdf:about="file:data/facts.rdf">
+    <owl:versionInfo>4.0 2010-12-10T18:30:00</owl:versionInfo>
+    <!-- <owl:versionIRI rdf:resource="file:data/4/facts.rdf"/> -->
+    <!-- <owl:priorVersion rdf:resource="file:data/3/facts.rdf"/> -->
+    <owl:imports rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl"/>
+    <owl:imports rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl"/>
+    <owl:imports rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Memories/2008/11/Memories.owl"/>
+  </owl:Ontology>
+
+  <interact:Conversation rdf:about="file:data/facts.rdf#ItemA">
+    <rdfs:label xml:lang="en">a conversation</rdfs:label>
+    <timeplace:startsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-12-06T10:00:00+13:00</timeplace:startsAt>
+    <timeplace:endsAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-12-06T12:00:00+13:00</timeplace:endsAt>
+    <interact:hasConversationPartner rdf:resource="file:data/facts.rdf#ItemC"/>
+    <interact:hasTopic rdf:resource="file:data/facts.rdf#ItemD"/>
+    <timeplace:locatedIn rdf:resource="file:data/facts.rdf#ItemE"/>
+  </interact:Conversation>
+
+  <foaf:Person rdf:about="file:data/facts.rdf#ItemC">
+    <rdfs:label>Annika</rdfs:label>
+  </foaf:Person>
+
+  <interact:Topic rdf:about="file:data/facts.rdf#ItemD">
+    <rdfs:label xml:lang="en">Gardening</rdfs:label>
+  </interact:Topic>
+
+  <timeplace:City rdf:about="file:data/facts.rdf#ItemE">
+    <rdfs:label xml:lang="en">Hamilton</rdfs:label>
+    <timeplace:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-37.78752</timeplace:lat>
+    <timeplace:long rdf:datatype="http://www.w3.org/2001/XMLSchema#string">175.282386</timeplace:long>
+  </timeplace:City>
+
+</rdf:RDF>

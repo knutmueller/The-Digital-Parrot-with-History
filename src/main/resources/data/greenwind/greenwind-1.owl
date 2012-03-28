@@ -1,0 +1,518 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY music "http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#" >
+    <!ENTITY mem "http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Memories/2008/11/Memories.owl#" >
+    <!ENTITY interact "http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#" >
+    <!ENTITY timeplace "http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#" >
+    <!ENTITY parrot "http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#" >
+]>
+
+
+<rdf:RDF xmlns="file:data/greenwind.n3#"
+     xml:base="file:data/greenwind.n3"
+     xmlns:music="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:parrot="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:mem="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Memories/2008/11/Memories.owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:timeplace="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#"
+     xmlns:interact="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#">
+    <owl:Ontology rdf:about="file:data/greenwind.n3">
+        <owl:versionInfo>v1.0 2009-09-11T23:21:16</owl:versionInfo>
+        <!-- <owl:imports rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl"/> -->
+        <owl:imports rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl"/>
+        <owl:imports rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Memories/2008/11/Memories.owl"/>
+        <owl:imports rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Music/2011/07/Music.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- file:data/greenwind.n3#Agyman -->
+
+    <rdf:Description rdf:about="file:data/greenwind.n3#Agyman">
+        <rdf:type rdf:resource="&music;Musician"/>
+        <rdfs:label>Agyman</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- file:data/greenwind.n3#BBassoon1 -->
+
+    <rdf:Description rdf:about="file:data/greenwind.n3#BBassoon1">
+        <rdf:type rdf:resource="&music;Bassoon"/>
+        <rdfs:label xml:lang="en">Bassoon</rdfs:label>
+        <music:partOfGroupInstrumentation rdf:resource="file:data/greenwind.n3#PTWGInstrumentation"/>
+        <music:instrumentationPlayedBy rdf:resource="file:data/greenwind.n3#Tim"/>
+    </rdf:Description>
+    
+
+
+    <!-- file:data/greenwind.n3#BCello1 -->
+
+    <rdf:Description rdf:about="file:data/greenwind.n3#BCello1">
+        <rdf:type rdf:resource="&music;Cello"/>
+        <rdfs:label xml:lang="en">Cello</rdfs:label>
+        <music:partOfGroupInstrumentation rdf:resource="file:data/greenwind.n3#PTWGInstrumentation"/>
+        <music:instrumentationPlayedBy rdf:resource="file:data/greenwind.n3#Selma"/>
+    </rdf:Description>
+    
+
+
+    <!-- file:data/greenwind.n3#BGuitar1 -->
+
+    <rdf:Description rdf:about="file:data/greenwind.n3#BGuitar1">
+        <rdf:type rdf:resource="&music;Guitar"/>
+        <rdfs:label xml:lang="en">Guitar</rdfs:label>
+        <music:instrumentationPlayedBy rdf:resource="file:data/greenwind.n3#Johannes"/>
+        <music:partOfGroupInstrumentation rdf:resource="file:data/greenwind.n3#PTWGInstrumentation"/>
+    </rdf:Description>
+    
+
+
+    <!-- file:data/greenwind.n3#BOboe1 -->
+
+    <rdf:Description rdf:about="file:data/greenwind.n3#BOboe1">
+        <rdf:type rdf:resource="&music;Oboe"/>
+        <rdfs:label xml:lang="en">Oboe</rdfs:label>
+        <music:instrumentationPlayedBy rdf:resource="file:data/greenwind.n3#Friederike"/>
+        <music:partOfGroupInstrumentation rdf:resource="file:data/greenwind.n3#PTWGInstrumentation"/>
+    </rdf:Description>
+    
+
+
+    <!-- file:data/greenwind.n3#BPercussion1 -->
+
+    <rdf:Description rdf:about="file:data/greenwind.n3#BPercussion1">
+        <rdf:type rdf:resource="&music;Percussion"/>
+        <rdfs:label xml:lang="en">Percussion 1</rdfs:label>
+        <music:instrumentationPlayedBy rdf:resource="file:data/greenwind.n3#Agyman"/>
+        <music:partOfGroupInstrumentation rdf:resource="file:data/greenwind.n3#PTWGInstrumentation"/>
+    </rdf:Description>
+    
+
+
+    <!-- file:data/greenwind.n3#BViolin1 -->
+
+    <rdf:Description rdf:about="file:data/greenwind.n3#BViolin1">
+        <rdf:type rdf:resource="&music;Violin"/>
+        <rdfs:label xml:lang="en">Violin</rdfs:label>
+        <music:instrumentationPlayedBy rdf:resource="file:data/greenwind.n3#Jakob"/>
+        <music:partOfGroupInstrumentation rdf:resource="file:data/greenwind.n3#PTWGInstrumentation"/>
+    </rdf:Description>
+    
+
+
+    <!-- file:data/greenwind.n3#BVoice1AndRecorder2 -->
+
+    <rdf:Description rdf:about="file:data/greenwind.n3#BVoice1AndRecorder2">
+        <rdf:type rdf:resource="&music;Recorder"/>
+        <rdf:type rdf:resource="&music;Voice"/>
+        <rdfs:label xml:lang="en">Voice and Recorder 2</rdfs:label>
+        <music:partOfGroupInstrumentation rdf:resource="file:data/greenwind.n3#PTWGInstrumentation"/>
+        <music:instrumentationPlayedBy rdf:resource="file:data/greenwind.n3#Ursula"/>
+    </rdf:Description>
+    
+
+
+    <!-- file:data/greenwind.n3#Bethanien -->
+
+    <rdf:Description rdf:about="file:data/greenwind.n3#Bethanien">
+        <rdf:type rdf:resource="&music;Building"/>
+        <rdfs:label xml:lang="en">House of Artists &quot;Bethanien&quot;</rdfs:label>
+        <timeplace:long rdf:datatype="&xsd;string">13.424219</timeplace:long>
+        <timeplace:lat rdf:datatype="&xsd;string">52.50384</timeplace:lat>
+        <timeplace:coordPrecision rdf:resource="&timeplace;BuildingPrecision"/>
+    </rdf:Description>
+    
+
+
+    <!-- file:data/greenwind.n3#Carlotta -->
+
+    <!-- <rdf:Description rdf:about="file:data/greenwind.n3#Carlotta">
+        <rdf:type rdf:resource="&music;Musician"/>
+        <rdfs:label>Carlotta</rdfs:label>
+    </rdf:Description> -->
+    
+
+
+    <!-- file:data/greenwind.n3#Clemens -->
+
+    <rdf:Description rdf:about="file:data/greenwind.n3#Clemens">
+        <rdf:type rdf:resource="&music;Musician"/>
+        <rdfs:label>Clemens</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- file:data/greenwind.n3#EnsembleProgress -->
+
+    <rdf:Description rdf:about="file:data/greenwind.n3#EnsembleProgress">
+        <rdf:type rdf:resource="&music;Ensemble"/>
+        <rdfs:label xml:lang="en">Ensemble Progress</rdfs:label>
+        <foaf:member rdf:resource="file:data/greenwind.n3#Agyman"/>
+        <foaf:member rdf:resource="file:data/greenwind.n3#Friederike"/>
+        <foaf:member rdf:resource="file:data/greenwind.n3#Jakob"/>
+        <foaf:member rdf:resource="file:data/greenwind.n3#Jan"/>
+        <foaf:member rdf:resource="file:data/greenwind.n3#Johannes"/>
+        <foaf:member rdf:resource="file:data/greenwind.n3#Selma"/>
+        <foaf:member rdf:resource="file:data/greenwind.n3#Sophie"/>
+        <music:hasConductor rdf:resource="file:data/greenwind.n3#Sylvia"/>
+        <foaf:member rdf:resource="file:data/greenwind.n3#Sylvia"/>
+        <foaf:member rdf:resource="file:data/greenwind.n3#Tim"/>
+        <foaf:member rdf:resource="file:data/greenwind.n3#Ursula"/>
+    </rdf:Description>
+    
+
+
+    <!-- file:data/greenwind.n3#Friederike -->
+
+    <rdf:Description rdf:about="file:data/greenwind.n3#Friederike">
+        <rdf:type rdf:resource="&music;Musician"/>
+        <rdfs:label>Friederike</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- file:data/greenwind.n3#Hanna -->
+
+    <!-- <rdf:Description rdf:about="file:data/greenwind.n3#Hanna">
+        <rdf:type rdf:resource="&music;Musician"/>
+        <rdfs:label>Hanna</rdfs:label>
+    </rdf:Description> -->
+    
+
+
+    <!-- file:data/greenwind.n3#Helen -->
+
+    <!-- <rdf:Description rdf:about="file:data/greenwind.n3#Helen">
+        <rdf:type rdf:resource="&music;Musician"/>
+        <rdfs:label>Helen</rdfs:label>
+    </rdf:Description> -->
+    
+
+
+    <!-- file:data/greenwind.n3#Ida -->
+
+    <!-- <rdf:Description rdf:about="file:data/greenwind.n3#Ida">
+        <rdf:type rdf:resource="&music;Musician"/>
+        <rdfs:label>Ida</rdfs:label>
+    </rdf:Description> -->
+    
+
+
+    <!-- file:data/greenwind.n3#Jakob -->
+
+    <rdf:Description rdf:about="file:data/greenwind.n3#Jakob">
+        <rdf:type rdf:resource="&music;Musician"/>
+        <rdfs:label>Jakob</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- file:data/greenwind.n3#Jan -->
+
+    <rdf:Description rdf:about="file:data/greenwind.n3#Jan">
+        <rdf:type rdf:resource="&music;Musician"/>
+        <rdfs:label>Jan</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- file:data/greenwind.n3#Jieun -->
+
+    <!-- <rdf:Description rdf:about="file:data/greenwind.n3#Jieun">
+        <rdf:type rdf:resource="&music;Musician"/>
+        <rdfs:label>Jieun</rdfs:label>
+    </rdf:Description> -->
+    
+
+
+    <!-- file:data/greenwind.n3#Johannes -->
+
+    <rdf:Description rdf:about="file:data/greenwind.n3#Johannes">
+        <rdf:type rdf:resource="&music;Musician"/>
+        <rdfs:label>Johannes</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- file:data/greenwind.n3#Justin -->
+
+    <!-- <rdf:Description rdf:about="file:data/greenwind.n3#Justin">
+        <rdf:type rdf:resource="&music;Musician"/>
+        <rdfs:label>Justin</rdfs:label>
+    </rdf:Description> -->
+    
+
+
+    <!-- file:data/greenwind.n3#KW2008 -->
+
+    <rdf:Description rdf:about="file:data/greenwind.n3#KW2008">
+        <rdf:type rdf:resource="&mem;Concert"/>
+        <rdfs:label xml:lang="en">Festival Klangwerkstatt 2008</rdfs:label>
+        <timeplace:startsAt rdf:datatype="&xsd;dateTime">2008-11-07T19:00:00</timeplace:startsAt>
+        <timeplace:endsAt rdf:datatype="&xsd;dateTime">2008-11-09T22:00:00</timeplace:endsAt>
+    </rdf:Description>
+    
+
+
+    <!-- file:data/greenwind.n3#MatthiasKaul -->
+
+    <rdf:Description rdf:about="file:data/greenwind.n3#MatthiasKaul">
+        <rdf:type rdf:resource="&music;Composer"/>
+        <rdfs:label>Composer: Matthias Kaul</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- file:data/greenwind.n3#Mia -->
+
+    <!-- <rdf:Description rdf:about="file:data/greenwind.n3#Mia">
+        <rdf:type rdf:resource="&music;Musician"/>
+        <rdfs:label>Mia</rdfs:label>
+    </rdf:Description> -->
+    
+
+
+    <!-- file:data/greenwind.n3#MusicalSchool -->
+
+    <foaf:Organization rdf:about="file:data/greenwind.n3#MusicalSchool">
+        <rdfs:label xml:lang="en">Musical School</rdfs:label>
+        <timeplace:locatedIn rdf:resource="file:data/greenwind.n3#Bethanien"/>
+    </foaf:Organization>
+    
+
+
+    <!-- file:data/greenwind.n3#NewPieceForKW2009 -->
+
+    <rdf:Description rdf:about="file:data/greenwind.n3#NewPieceForKW2009">
+        <rdf:type rdf:resource="&interact;Conversation"/>
+        <rdfs:label xml:lang="en">a conversation</rdfs:label>
+        <timeplace:during rdf:resource="file:data/greenwind.n3#KW2008"/>
+        <interact:hasConversationPartner rdf:resource="file:data/greenwind.n3#MatthiasKaul"/>
+        <interact:hasTopic rdf:resource="file:data/greenwind.n3#PaintingTheWindGreen"/>
+        <interact:hasConversationPartner rdf:resource="file:data/greenwind.n3#Sylvia"/>
+    </rdf:Description>
+    
+
+
+    <!-- file:data/greenwind.n3#PTWGInstrumentation -->
+
+    <rdf:Description rdf:about="file:data/greenwind.n3#PTWGInstrumentation">
+        <rdf:type rdf:resource="&music;GroupInstrumentation"/>
+        <rdfs:label xml:lang="en">Instrumentation: &quot;Something with Wind&quot;</rdfs:label>
+        <music:instrumentationPlayedBy rdf:resource="file:data/greenwind.n3#EnsembleProgress"/>
+    </rdf:Description>
+    
+
+
+    <!-- file:data/greenwind.n3#PaintingTheWindGreen -->
+
+    <rdf:Description rdf:about="file:data/greenwind.n3#PaintingTheWindGreen">
+        <rdf:type rdf:resource="&music;Composition"/>
+        <rdfs:label xml:lang="en">Composition: &quot;Something with Wind&quot;</rdfs:label>
+        <music:hasInstrumentation rdf:resource="file:data/greenwind.n3#PTWGInstrumentation"/>
+    </rdf:Description>
+    
+
+
+    <!-- file:data/greenwind.n3#Rehearsal1 -->
+
+    <rdf:Description rdf:about="file:data/greenwind.n3#Rehearsal1">
+        <rdf:type rdf:resource="&music;Rehearsal"/>
+        <rdfs:label xml:lang="en">Rehearsal 1</rdfs:label>
+        <timeplace:startsAt rdf:datatype="&xsd;dateTime">2009-09-04T18:00:00</timeplace:startsAt>
+        <timeplace:endsAt rdf:datatype="&xsd;dateTime">2009-09-04T20:00:00</timeplace:endsAt>
+        <interact:hasConversationPartner rdf:resource="file:data/greenwind.n3#EnsembleProgress"/>
+        <interact:hasTopic rdf:resource="file:data/greenwind.n3#PaintingTheWindGreen"/>
+        <music:hasRehearsedComposition rdf:resource="file:data/greenwind.n3#PaintingTheWindGreen"/>
+        <music:partOfRehearsalPhase rdf:resource="file:data/greenwind.n3#RehearsalPhaseForKW2009"/>
+        <timeplace:locatedIn rdf:resource="file:data/greenwind.n3#Room174"/>
+    </rdf:Description>
+    
+
+
+    <!-- file:data/greenwind.n3#RehearsalPhaseForKW2009 -->
+
+    <rdf:Description rdf:about="file:data/greenwind.n3#RehearsalPhaseForKW2009">
+        <rdf:type rdf:resource="&music;RehearsalPhase"/>
+        <rdfs:label xml:lang="en">Rehearsal Phase for Klangwerkstatt 2009</rdfs:label>
+        <timeplace:startsAt rdf:datatype="&xsd;dateTime">2009-09-04T18:00:00+01:00</timeplace:startsAt>
+        <timeplace:endsAt rdf:datatype="&xsd;dateTime">2009-11-06T22:00:00+01:00</timeplace:endsAt>
+        <music:hasRehearsingArtist rdf:resource="file:data/greenwind.n3#EnsembleProgress"/>
+        <music:hasRehearsedComposition rdf:resource="file:data/greenwind.n3#PaintingTheWindGreen"/>
+    </rdf:Description>
+    
+
+
+    <!-- file:data/greenwind.n3#Room156 -->
+
+    <rdf:Description rdf:about="file:data/greenwind.n3#Room156">
+        <rdf:type rdf:resource="&music;Room"/>
+        <rdfs:label xml:lang="en">Room 156: Concert Chamber</rdfs:label>
+        <timeplace:locatedIn rdf:resource="file:data/greenwind.n3#MusicalSchool"/>
+        <timeplace:coordPrecision rdf:resource="&timeplace;RoomPrecision"/>
+    </rdf:Description>
+    
+
+
+    <!-- file:data/greenwind.n3#Room170 -->
+
+    <rdf:Description rdf:about="file:data/greenwind.n3#Room170">
+        <rdf:type rdf:resource="&music;Room"/>
+        <rdfs:label xml:lang="en">Room 170: Small Concert Room</rdfs:label>
+        <timeplace:locatedIn rdf:resource="file:data/greenwind.n3#MusicalSchool"/>
+        <timeplace:coordPrecision rdf:resource="&timeplace;RoomPrecision"/>
+    </rdf:Description>
+    
+
+
+    <!-- file:data/greenwind.n3#Room174 -->
+
+    <rdf:Description rdf:about="file:data/greenwind.n3#Room174">
+        <rdf:type rdf:resource="&music;Room"/>
+        <rdfs:label xml:lang="en">Room 174: Sound Studio</rdfs:label>
+        <timeplace:locatedIn rdf:resource="file:data/greenwind.n3#MusicalSchool"/>
+        <timeplace:coordPrecision rdf:resource="&timeplace;RoomPrecision"/>
+    </rdf:Description>
+    
+
+
+    <!-- file:data/greenwind.n3#Rosanna -->
+
+    <!-- <rdf:Description rdf:about="file:data/greenwind.n3#Rosanna">
+        <rdf:type rdf:resource="&music;Musician"/>
+        <rdfs:label>Rosanna</rdfs:label>
+    </rdf:Description> -->
+    
+
+
+    <!-- file:data/greenwind.n3#Selma -->
+
+    <rdf:Description rdf:about="file:data/greenwind.n3#Selma">
+        <rdf:type rdf:resource="&music;Musician"/>
+        <rdfs:label>Selma</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- file:data/greenwind.n3#Sophie -->
+
+    <rdf:Description rdf:about="file:data/greenwind.n3#Sophie">
+        <rdf:type rdf:resource="&music;Musician"/>
+        <rdfs:label>Sophie</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- file:data/greenwind.n3#Studio1 -->
+
+    <rdf:Description rdf:about="file:data/greenwind.n3#Studio1">
+        <rdf:type rdf:resource="&music;Room"/>
+        <rdfs:label xml:lang="en">Room 195</rdfs:label>
+        <timeplace:locatedIn rdf:resource="file:data/greenwind.n3#Bethanien"/>
+        <timeplace:coordPrecision rdf:resource="&timeplace;RoomPrecision"/>
+    </rdf:Description>
+    
+
+
+    <!-- file:data/greenwind.n3#Sylvia -->
+
+    <rdf:Description rdf:about="file:data/greenwind.n3#Sylvia">
+        <rdf:type rdf:resource="&music;Conductor"/>
+        <rdf:type rdf:resource="&music;Musician"/>
+        <rdfs:label>Conductor: Sylvia</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- file:data/greenwind.n3#TalkAboutRehearsalPhase -->
+
+    <rdf:Description rdf:about="file:data/greenwind.n3#TalkAboutRehearsalPhase">
+        <rdf:type rdf:resource="&interact;Conversation"/>
+        <rdfs:label xml:lang="en">a conversation</rdfs:label>
+        <timeplace:after rdf:resource="file:data/greenwind.n3#KW2008"/>
+        <interact:hasTopic rdf:resource="file:data/greenwind.n3#RehearsalPhaseForKW2009"/>
+        <interact:hasConversationPartner rdf:resource="file:data/greenwind.n3#Sylvia"/>
+    </rdf:Description>
+    
+
+
+    <!-- file:data/greenwind.n3#Tim -->
+
+    <rdf:Description rdf:about="file:data/greenwind.n3#Tim">
+        <rdf:type rdf:resource="&music;Musician"/>
+        <rdfs:label>Tim</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- file:data/greenwind.n3#Ursula -->
+
+    <rdf:Description rdf:about="file:data/greenwind.n3#Ursula">
+        <rdf:type rdf:resource="&music;Musician"/>
+        <rdfs:label>Ursula</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="file:data/greenwind.n3#EvaluationOfPerformance">
+        <rdfs:label xml:lang="en">Reviewing Performance</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.2.1789) http://owlapi.sourceforge.net -->
+

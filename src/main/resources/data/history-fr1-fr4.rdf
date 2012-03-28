@@ -1,0 +1,162 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:parrot="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/DigitalParrot/2009/02/DigitalParrot.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:timeplace="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#"
+    xmlns:conf="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Conferences/2008/11/Conferences.owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:history="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:interact="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#" > 
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1875892888">
+    <history:newObject>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#Topic</history:newObject>
+    <history:predicate>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</history:predicate>
+    <history:subject>file:data/facts.rdf#ItemD</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#version-4.0">
+    <history:downGradeWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#changeset--932324559"/>
+    <history:priorVersion rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#version-3.0"/>
+    <history:ontologyIRI>file:data/facts.rdf</history:ontologyIRI>
+    <owl:versionInfo>4.0 2010-12-10T18:30:00</owl:versionInfo>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Version"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#version-2.0">
+    <history:upGradeWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#changeset--1052445393"/>
+    <history:nextVersion rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#version-3.0"/>
+    <history:downGradeWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#changeset--1172566227"/>
+    <history:priorVersion rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#version-1.0"/>
+    <history:ontologyIRI>file:data/facts.rdf</history:ontologyIRI>
+    <owl:versionInfo>2.0 2010-12-10T18:10:00</owl:versionInfo>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Version"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#removal--33639606">
+    <history:oldObject xml:lang="en">Flowers</history:oldObject>
+    <history:predicate>http://www.w3.org/2000/01/rdf-schema#label</history:predicate>
+    <history:subject>file:data/facts.rdf#ItemB</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Removal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#change--122484074">
+    <history:newObject>4.0 2010-12-10T18:30:00</history:newObject>
+    <history:oldObject>3.0 2010-12-10T18:20:00</history:oldObject>
+    <history:predicate>http://www.w3.org/2002/07/owl#versionInfo</history:predicate>
+    <history:subject>file:data/facts.rdf</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Change"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#change-69911766">
+    <history:newObject>3.0 2010-12-10T18:20:00</history:newObject>
+    <history:oldObject>2.0 2010-12-10T18:10:00</history:oldObject>
+    <history:predicate>http://www.w3.org/2002/07/owl#versionInfo</history:predicate>
+    <history:subject>file:data/facts.rdf</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Change"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#version-3.0">
+    <history:upGradeWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#changeset--932324559"/>
+    <history:nextVersion rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#version-4.0"/>
+    <history:downGradeWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#changeset--1052445393"/>
+    <history:priorVersion rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#version-2.0"/>
+    <history:ontologyIRI>file:data/facts.rdf</history:ontologyIRI>
+    <owl:versionInfo>3.0 2010-12-10T18:20:00</owl:versionInfo>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Version"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#changeset--1052445393">
+    <history:toVersion rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#version-3.0"/>
+    <history:fromVersion rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#version-2.0"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1890349981"/>
+    <history:hasRemoval rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#removal--33639606"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1875892888"/>
+    <history:hasChange rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#change-69911766"/>
+    <history:hasChange rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#change-497645091"/>
+    <history:hasRemoval rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#removal--1878644902"/>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#ChangeSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1113360802">
+    <history:newObject rdf:datatype="http://www.w3.org/2001/XMLSchema#string">175.282386</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#long</history:predicate>
+    <history:subject>file:data/facts.rdf#ItemE</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-2049740121">
+    <history:newObject rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-37.78752</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#lat</history:predicate>
+    <history:subject>file:data/facts.rdf#ItemE</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#changeset--932324559">
+    <history:toVersion rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#version-4.0"/>
+    <history:fromVersion rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#version-3.0"/>
+    <history:hasChange rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#change--122484074"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-819935197"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-304814317"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--11861500"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1113360802"/>
+    <history:hasAddition rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-2049740121"/>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#ChangeSet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#version-1.0">
+    <history:upGradeWith rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#changeset--1172566227"/>
+    <history:nextVersion rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#version-2.0"/>
+    <history:ontologyIRI>file:data/facts.rdf</history:ontologyIRI>
+    <owl:versionInfo>1.0 2010-12-10T18:00:00</owl:versionInfo>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Version"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#removal--1878644902">
+    <history:oldObject>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#Topic</history:oldObject>
+    <history:predicate>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</history:predicate>
+    <history:subject>file:data/facts.rdf#ItemB</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Removal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#change-262307606">
+    <history:newObject>2.0 2010-12-10T18:10:00</history:newObject>
+    <history:oldObject>1.0 2010-12-10T18:00:00</history:oldObject>
+    <history:predicate>http://www.w3.org/2002/07/owl#versionInfo</history:predicate>
+    <history:subject>file:data/facts.rdf</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Change"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-1890349981">
+    <history:newObject xml:lang="en">Gardening</history:newObject>
+    <history:predicate>http://www.w3.org/2000/01/rdf-schema#label</history:predicate>
+    <history:subject>file:data/facts.rdf#ItemD</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-819935197">
+    <history:newObject>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#City</history:newObject>
+    <history:predicate>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</history:predicate>
+    <history:subject>file:data/facts.rdf#ItemE</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition-304814317">
+    <history:newObject xml:lang="en">Hamilton</history:newObject>
+    <history:predicate>http://www.w3.org/2000/01/rdf-schema#label</history:predicate>
+    <history:subject>file:data/facts.rdf#ItemE</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#change-1212476481">
+    <history:newObject>Annika</history:newObject>
+    <history:oldObject>Anika</history:oldObject>
+    <history:predicate>http://www.w3.org/2000/01/rdf-schema#label</history:predicate>
+    <history:subject>file:data/facts.rdf#ItemC</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Change"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#addition--11861500">
+    <history:newObject>file:data/facts.rdf#ItemE</history:newObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/TimeAndPlace/2008/11/TimeAndPlace.owl#locatedIn</history:predicate>
+    <history:subject>file:data/facts.rdf#ItemA</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Addition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#change-497645091">
+    <history:newObject>file:data/facts.rdf#ItemD</history:newObject>
+    <history:oldObject>file:data/facts.rdf#ItemB</history:oldObject>
+    <history:predicate>http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/Interaction/2008/11/Interaction.owl#hasTopic</history:predicate>
+    <history:subject>file:data/facts.rdf#ItemA</history:subject>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#Change"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#changeset--1172566227">
+    <history:toVersion rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#version-2.0"/>
+    <history:fromVersion rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#version-1.0"/>
+    <history:hasChange rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#change-262307606"/>
+    <history:hasChange rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Facts/history.rdf#change-1212476481"/>
+    <rdf:type rdf:resource="http://parrot.resnet.scms.waikato.ac.nz/Parrot/Terms/History/2011/11/History.owl#ChangeSet"/>
+  </rdf:Description>
+</rdf:RDF>
