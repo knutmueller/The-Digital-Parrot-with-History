@@ -4,9 +4,9 @@
   <groupId>de.kmamut.parrot</groupId>
   <artifactId>digital-parrot-with-history</artifactId>
   <packaging>jar</packaging>
-  <version>1.1-SNAPSHOT</version>
-  <name>digital-parrot-with-history</name>
-  <url>https://github.com/knutmueller/digital-parrot-with-history</url>
+  <version>1.0-SNAPSHOT</version>
+  <name>The Digital Parrot with History</name>
+  <url>https://github.com/knutmueller/The-Digital-Parrot-with-History</url>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
@@ -153,7 +153,7 @@
   </dependencies>
   <issueManagement>
     <system>github</system>
-    <url>https://github.com/knutmueller/digital-parrot-with-history/issues</url>
+    <url>https://github.com/knutmueller/The-Digital-Parrot-with-History/issues</url>
   </issueManagement>
   <licenses>
   <license>
